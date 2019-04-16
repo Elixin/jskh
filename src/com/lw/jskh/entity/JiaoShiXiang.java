@@ -1,5 +1,10 @@
 package com.lw.jskh.entity;
 
+/***
+ * 考核项类
+ */
+
+
 public class JiaoShiXiang {
 
 	private int id;

@@ -28,7 +28,7 @@ public class BaseDao {
 	public boolean getConnection() {
 		// 读出配置信息
 		String driver="com.mysql.jdbc.Driver";
-		String url="jdbc:mysql://localhost:3306/jskh";
+		String url="jdbc:mysql://localhost:3306/jskh?userUnicode=true&characterEncoding=utf-8";
 		String username="root";
 		String password= "1475693";
 		// 加载JDBC驱动

@@ -1,5 +1,9 @@
 package com.lw.jskh.entity;
 
+/***
+ * 团队类
+ */
+
 public class Team {
     private int id;
     private String teamName;

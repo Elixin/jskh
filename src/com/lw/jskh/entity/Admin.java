@@ -1,5 +1,10 @@
 package com.lw.jskh.entity;
 
+/***
+ *
+ *
+ */
+
 public class Admin {
 	private int id;
 	private String username;//用户名

@@ -12,7 +12,7 @@
     </schema>
     <schema id="3" parent="1" name="jskh">
       <Current>1</Current>
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8_bin</Collation>
     </schema>
     <schema id="4" parent="1" name="mvctest">
       <Collation>latin1_swedish_ci</Collation>

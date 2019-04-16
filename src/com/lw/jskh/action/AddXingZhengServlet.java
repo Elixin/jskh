@@ -32,7 +32,6 @@ public class AddXingZhengServlet extends HttpServlet {
 		String trueName = request.getParameter("trueName");
 		String team = request.getParameter("team");
 		String dep = request.getParameter("dep");
-		//System.out.println(userName+","+trueName+","+team);
 		XingZhengDao xingZhengDao = new XingZhengDaoImpl();
 		XingZheng xingZheng = new XingZheng();
 		xingZheng.setUsername(userName);
@@ -41,7 +40,8 @@ public class AddXingZhengServlet extends HttpServlet {
 		xingZheng.setPassword("123456");
 		xingZheng.setDep(dep);
 		int i = xingZhengDao.addXingZheng(xingZheng);
-		if(i==-1) {
+		if(i==-1) {		//System.out.println(userName+","+trueName+","+team);
+
 			response.sendRedirect("teamAddXingZheng.jsp?info=no");
 		}else {
 		    response.sendRedirect("teamAddXingZheng.jsp?info=ok");

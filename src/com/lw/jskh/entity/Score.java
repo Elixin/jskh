@@ -1,5 +1,9 @@
 package com.lw.jskh.entity;
 
+
+/***
+ *
+ */
 public class Score {
 
 	private Integer add;

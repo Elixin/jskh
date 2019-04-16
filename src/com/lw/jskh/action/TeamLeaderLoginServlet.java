@@ -25,7 +25,7 @@ public class TeamLeaderLoginServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 System.out.println("teamLeaderLogin");  
+		 System.out.println("teamLeaderLogin");
 		   request.setCharacterEncoding("utf-8");
 		   String username = request.getParameter("username");
 		   String password = request.getParameter("password");

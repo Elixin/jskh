@@ -25,7 +25,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding("UTF-8");
 		int id = Integer.parseInt(request.getParameter("id"));
 		String username = request.getParameter("username");
 		String trueName = request.getParameter("trueName");
@@ -38,6 +38,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 		TeacherDao teacherDao = new TeacherDaoImpl();
 		HttpSession session = request.getSession();
 		Teacher teacher=(Teacher)session.getAttribute("teacher");
+
 		if(password==null || password.equals("")) {
 			 teacher.setId(id);
 			 teacher.setUsername(username);
@@ -47,6 +48,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 			 teacher.setDep(dep);
 			 teacher.setNote(note);
 			 teacherDao.updateTeacherNotPassword(teacher);
+			System.out.println(teacher.getId()+teacher.getUsername());
 		}else {
 		     teacher.setId(id);
 			 teacher.setUsername(username);

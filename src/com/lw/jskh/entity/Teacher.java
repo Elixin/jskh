@@ -1,5 +1,10 @@
 package com.lw.jskh.entity;
 
+/***
+ * 教师用户类
+ *
+ */
+
 public class Teacher implements Comparable<Teacher>{
 	private int id;
 	private String username;//用户名

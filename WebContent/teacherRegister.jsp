@@ -12,8 +12,7 @@
 <title>教师考核系统</title>
 <link type="text/css" rel="stylesheet" href="css/common.css" />
 <style type="text/css">
-<!--
--->
+
 </style>
 <script language="javascript">
  
@@ -47,7 +46,6 @@
           List<Dep> deps = depDao.queryAllDep();
           LevelDao levelDao = new LevelDaoImpl();
           List<Level> levels = levelDao.getAll();
-          
          %>
          <br/><h4><font color="red">(用户名及工号，填加后不能再修改)</font></h4><br/>
          

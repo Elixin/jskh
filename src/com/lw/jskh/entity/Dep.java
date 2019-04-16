@@ -1,5 +1,9 @@
 package com.lw.jskh.entity;
 
+/***
+ * 部门类
+ */
+
 public class Dep {   //部门
      private int id;
      private String depName;  //部门名称

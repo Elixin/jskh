@@ -20,8 +20,9 @@
  function check(){
      var pwd=document.getElementById("password").value;
      var pwd1=document.getElementById("password2").value;
-      if(pwd1 != pwd){
+     if(pwd1 != pwd){
         alert("两次密码不一样");
+
         document.getElementById('password').focus();
         return false;
       }
