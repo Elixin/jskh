@@ -15,6 +15,17 @@
 <!--
 -->
 </style>
+<%--    <script type="application/javascript">--%>
+<%--        function image(target) {--%>
+<%--            var name=target.value;--%>
+<%--            var fileName = name.substring(name.lastIndexOf(".")+1).toLowerCase();--%>
+<%--            if(fileName !="jpg" && fileName !="jpeg" && fileName !="png" && fileName !="gif"){--%>
+<%--                alert("请选择图片格式文件上传(jpg,png,gif,gif等)！");--%>
+<%--                target.value="";--%>
+<%--                return false;   //阻止submit提交--%>
+<%--            }--%>
+<%--        }--%>
+<%--    </script>--%>
 </head>
 
 <body>
@@ -44,7 +55,7 @@
        <th>个人标准照:</th><td><img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px"></td>
      </tr>     
       <tr>
-        <td>上传图片：</td><td><input type="file" accept="image/*" name="upfile" size="40" /><input type="submit" value="上传" /></td>
+        <td>上传图片：</td><td><input type="file" accept="image/*" name="upfile" size="40" onchange="image(this)" /><input type="submit" value="上传"  /></td>
       </tr>
       </table>
    </form><br>

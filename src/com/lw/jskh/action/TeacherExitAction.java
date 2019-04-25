@@ -25,6 +25,7 @@ public class TeacherExitAction extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		session.removeAttribute("teacher");
+		System.out.println("5");
 		response.sendRedirect("index.jsp");
 	}
 

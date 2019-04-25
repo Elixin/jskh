@@ -25,6 +25,7 @@ public class RegTeacherServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		System.out.println("3");
 		String userName = request.getParameter("userName");
 		String trueName = request.getParameter("trueName");
 		String password = request.getParameter("password");

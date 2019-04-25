@@ -13,7 +13,7 @@ import com.lw.jskh.dao.impl.TeacherDaoImpl;
 import com.lw.jskh.entity.Teacher;
 
 /**
- * Servlet implementation class TeacherLoginServlet
+ * 登陆验证
  */
 @WebServlet("/teacherLogin")
 public class TeacherLoginServlet extends HttpServlet {
@@ -32,7 +32,7 @@ public class TeacherLoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 System.out.println("teacherLogin");
-		   request.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding("utf-8");
 		   String username = request.getParameter("username");
 		   String password = request.getParameter("password");
 		   TeacherDao teacherDao = new TeacherDaoImpl();

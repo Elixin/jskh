@@ -24,6 +24,7 @@ public class XingZhengExit extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		System.out.println("16");
 		session.removeAttribute("xingZheng");
 		response.sendRedirect("index.jsp");
 	}

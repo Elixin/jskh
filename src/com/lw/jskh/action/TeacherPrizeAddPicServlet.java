@@ -41,6 +41,7 @@ public class TeacherPrizeAddPicServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("/teacher/teacherPrizeAddPic");
+		System.out.println("8");
 		request.setCharacterEncoding("utf-8");
 		int id =Integer.parseInt(request.getParameter("id"));
 		System.out.println(id);

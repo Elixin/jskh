@@ -41,6 +41,7 @@ public class XingZhengPrizeAddPicServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("/xingzheng/xingZhengPrizeAddPic");
+		System.out.println("19");
 		request.setCharacterEncoding("utf-8");
 		int id =Integer.parseInt(request.getParameter("id"));
 		//System.out.println(id);

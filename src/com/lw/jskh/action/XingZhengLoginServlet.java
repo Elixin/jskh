@@ -26,7 +26,8 @@ public class XingZhengLoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 System.out.println("xingzhengLogin");
-		   request.setCharacterEncoding("utf-8");
+		System.out.println("18");
+		request.setCharacterEncoding("utf-8");
 		   String username = request.getParameter("username");
 		   String password = request.getParameter("password");
 		   XingZhengDao xingZhengDao = new XingZhengDaoImpl();

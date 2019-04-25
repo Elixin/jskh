@@ -77,7 +77,7 @@ if(teacher==null){
         </tr>
          <form action="teacherPrizeAddPic?id=<%=teacher.getId() %>&tPrizeType=13" method="post" enctype="multipart/form-data" >
          <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  required="required"/></td><td><input type="submit" value="上传" /></td>
+            <td>上传图片：</td><td><input type="file" accept="application/" name="file" size="80"  required="required"/></td><td><input type="submit" value="上传" /></td>
          </tr>
          </form>
         

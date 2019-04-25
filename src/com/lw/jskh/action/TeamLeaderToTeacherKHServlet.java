@@ -29,6 +29,7 @@ public class TeamLeaderToTeacherKHServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		System.out.println("12");
 		String[] teacherTeamLeader = request.getParameterValues("teacherTeamLeader");
 		String[] teamLeaderNote = request.getParameterValues("teamLeaderNote");
 		for(String s : teamLeaderNote) {

@@ -26,6 +26,7 @@ public class TPrizeUploadDelServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		System.out.println("13");
 		int id = Integer.parseInt(request.getParameter("id"));
 		TprizeUploadDao tprizeUploadDao = new TprizeUploadDaoImpl();
 		tprizeUploadDao.del(id);

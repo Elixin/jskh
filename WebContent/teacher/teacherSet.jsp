@@ -28,6 +28,9 @@
       }
 
 }
+function retur() {
+    self.location='teacherMain.jsp'
+}
 </script>
 </head>
 
@@ -114,7 +117,8 @@
      </tr>
     </table>
      <br>
-    <input type="submit" value="提交" onclick="return check()" >　　<input type="reset" value="取消" />
+    <input type="submit" value="提交" onclick="return check()" >
+     <input type="reset" value="取消"  onclick="retur()"/>
    
  </form>
  </div>

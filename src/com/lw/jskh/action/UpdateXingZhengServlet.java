@@ -27,6 +27,7 @@ public class UpdateXingZhengServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("/xingzheng/updateXingZheng");
 		request.setCharacterEncoding("utf-8");
+		System.out.println("15");
 		int id = Integer.parseInt(request.getParameter("id"));
 		String username = request.getParameter("username");
 		String trueName = request.getParameter("trueName");

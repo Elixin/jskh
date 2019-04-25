@@ -28,6 +28,7 @@ public class XPrizeUploadDelServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		System.out.println("21");
 		int id = Integer.parseInt(request.getParameter("id"));
 		XprizeUploadDao xprizeUploadDao = new XprizeUploadDaoImpl();
 		xprizeUploadDao.del(id);

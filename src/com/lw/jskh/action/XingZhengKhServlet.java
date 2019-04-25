@@ -31,6 +31,7 @@ public class XingZhengKhServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("/xingzheng/xingzhengKh");
+		System.out.println("17");
 		request.setCharacterEncoding("utf-8");
 		String[] xingZhengMyselft = request.getParameterValues("xingZhengMyself");
 		String[] xingZhengMyselfNote = request.getParameterValues("xingZhengMyselfNote");

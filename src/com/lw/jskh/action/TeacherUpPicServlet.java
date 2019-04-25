@@ -25,6 +25,10 @@ import com.lw.jskh.entity.Teacher;
 import com.lw.jskh.entity.TprizeUpload;
 
 
+/***
+ * 教师图片上传
+ */
+
 @WebServlet("/teacher/teacherUpPic")
 public class TeacherUpPicServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -37,6 +41,7 @@ public class TeacherUpPicServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		System.out.println("9");
 		int id = Integer.parseInt(request.getParameter("id"));
 		System.out.println(id);
 
@@ -98,40 +103,48 @@ public class TeacherUpPicServlet extends HttpServlet {
 					//处理获取到的上传文件的文件名的路径部分，只保留文件名部分
 					//filename = filename.substring(filename.lastIndexOf("\\")+1);
 					fileType = filename.substring(filename.lastIndexOf(".") + 1);
-					filename = teacher.getUsername() + "_" + teacher.getTrueName() + "." + fileType;
-					request.setCharacterEncoding("utf-8");
 
-					System.out.println(filename);
-					System.out.println(fileType);
+//					增加文件类型筛选
+					if (fileType.equals("png")||fileType.equals("jpg")||fileType.equals("gif")||fileType.equals("jpeg")){
+						filename = teacher.getUsername() + "_" + teacher.getTrueName() + "." + fileType;
+						request.setCharacterEncoding("utf-8");
+
+						System.out.println(filename);
+						System.out.println(fileType);
 
 
-					//获取item中的上传文件的输入流
-					InputStream in = item.getInputStream();
-					//创建一个文件输出流
-					FileOutputStream out = new FileOutputStream(savePath + "/" + filename);
-					//创建一个缓冲区
-					byte buffer[] = new byte[1024];
-					//判断输入流中的数据是否已经读完的标识
-					int len = 0;
-					//循环将输入流读入到缓冲区当中，(len=in.read(buffer))>0就表示in里面还有数据
-					while ((len = in.read(buffer)) > 0) {
-						//使用FileOutputStream输出流将缓冲区的数据写入到指定的目录(savePath + "\\" + filename)当中
-						out.write(buffer, 0, len);
+						//获取item中的上传文件的输入流
+						InputStream in = item.getInputStream();
+						//创建一个文件输出流
+						FileOutputStream out = new FileOutputStream(savePath + "/" + filename);
+						//创建一个缓冲区
+						byte buffer[] = new byte[1024];
+						//判断输入流中的数据是否已经读完的标识
+						int len = 0;
+						//循环将输入流读入到缓冲区当中，(len=in.read(buffer))>0就表示in里面还有数据
+						while ((len = in.read(buffer)) > 0) {
+							//使用FileOutputStream输出流将缓冲区的数据写入到指定的目录(savePath + "\\" + filename)当中
+							out.write(buffer, 0, len);
+						}
+						//关闭输入流
+						in.close();
+						//关闭输出流
+						out.close();
+						//删除处理文件上传时生成的临时文件
+						item.delete();
+						message = "图片文件上传成功！";
+						filename = teacher.getUsername() + "_" + teacher.getTrueName() + "\\" + filename;
+					}else {
+//						如果上传类型错误则获取原本数据库类字段恢复数据
+						filename = teacher.getPic();
+						System.out.println(filename+"   123");
+						item.delete();
 					}
-					//关闭输入流
-					in.close();
-					//关闭输出流
-					out.close();
-					//删除处理文件上传时生成的临时文件
-					item.delete();
-					message = "图片文件上传成功！";
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
-		filename = teacher.getUsername() + "_" + teacher.getTrueName() + "\\" + teacher.getUsername() + "_" + teacher.getTrueName() + "." + fileType;
 		teacher.setPic(filename);
 		teacherDao.updateTeacherAll(teacher);
 		HttpSession session = request.getSession();

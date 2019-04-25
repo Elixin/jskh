@@ -32,6 +32,7 @@ public class TeamKhServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("/xingzheng/xingzhengKh");
+		System.out.println("10");
 		request.setCharacterEncoding("utf-8");
 		String[] xingZhengTeam = request.getParameterValues("xingZhengTeam");
 		String[] xingZhengTeamNote = request.getParameterValues("xingZhengTeamNote");
