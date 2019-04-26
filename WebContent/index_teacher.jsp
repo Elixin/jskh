@@ -35,10 +35,10 @@
         </div>
         <form action="teacherLogin" method="post">
             <div class="lgD">
-                <input type="text" placeholder="输入用户名" />
+                <input type="text" name="username" id="username"  required placeholder="输入用户名"/>
             </div>
             <div class="lgD">
-                <input type="password" placeholder="输入用户密码" />
+                <input type="password" name="password" id="password"   required placeholder="输入用户密码" />
             </div>
             <div class="logC">
                 <input type="submit" value="登 录"/>
@@ -50,28 +50,3 @@
 </div>
 </body>
 </html>
-
-
-<%--<div align="center"   >--%>
-<%--<br/><br/><br/>--%>
-<%--<h1>任课教师请登录</h1><br/>--%>
-<%-- <%--%>
-<%--          request.setCharacterEncoding("utf-8");--%>
-<%--          String info =request.getParameter("info");--%>
-<%--          if(info!=null && info.equals("fail") ){--%>
-<%--            out.println("<br/><font color='red'>用户名或密码不正确！</font>");--%>
-<%--          }--%>
-<%--          if(info!=null && info.equals("open") ){--%>
-<%--              out.println("<br/><font color='red'>没有开放登录权限！</font>");--%>
-<%--            }--%>
-<%--         %>--%>
-<%--         <br/><br/>--%>
-<%--      <form action="teacherLogin" method="post">--%>
-<%--          <p>--%>
-<%--             	<p>用户名：<input type="text" name="username" id="username"  required /></p><br>--%>
-<%--               	<p>密码：<input type="password" name="password" id="password"   required/></p><br>--%>
-<%--               	<p><input type="submit" value="提交" />　　　<input type="reset" value="取消" />--%>
-<%--        </form> --%>
-<%--        <br/>--%>
-<%--         <font color='red' size='4'><a href="teacherRegister.jsp">教师注册</a></font> --%>
-<%-- </div>      --%>
