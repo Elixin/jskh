@@ -2,13 +2,9 @@ package com.lw.jskh.dao.impl;
 
 import java.util.List;
 
+import com.lw.jskh.dao.*;
 import org.junit.Test;
 
-import com.lw.jskh.dao.AdminDao;
-import com.lw.jskh.dao.JiaoShiXiangDao;
-import com.lw.jskh.dao.TeacherDao;
-import com.lw.jskh.dao.TeamLeaderDao;
-import com.lw.jskh.dao.XingZhengDao;
 import com.lw.jskh.entity.Admin;
 import com.lw.jskh.entity.JiaoShiXiang;
 import com.lw.jskh.entity.Teacher;
@@ -22,6 +18,8 @@ public class TestDaoImp {
 	XingZhengDao xingZhengDao = new XingZhengDaoImpl();
 	TeamLeaderDao tlDao = new TeamLeaderDaoImpl();
 	JiaoShiXiangDao jsxDao = new JiaoShiXiangDaoImpl();
+	CollegeLeaderDao clDao= new CollegeLeaderDaoImpl();
+
 	
 	@Test
 	public void  TestTeacherlogin() {
@@ -46,6 +44,7 @@ public class TestDaoImp {
 		TeamLeader tl = tlDao.login("xie", "123");
 		System.out.println(tl.toString());
 	}
+
 	
 	@Test
 	public void  TestQueryAllKSH() {

@@ -30,7 +30,7 @@ public class BaseDao {
 		String driver="com.mysql.jdbc.Driver";
 		String url="jdbc:mysql://localhost:3306/jskh?userUnicode=true&characterEncoding=utf-8";
 		String username="root";
-		String password= "1475693";
+		String password= "119411";
 		// 加载JDBC驱动
 		try {
 			//Class.forName(driver);

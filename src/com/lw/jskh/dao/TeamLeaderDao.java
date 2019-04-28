@@ -31,4 +31,7 @@ public interface TeamLeaderDao {
 	public List<Teacher> descOrederTeamScoreTeacher(int teamLeaderId) ; //按得分降序排列
 	
 	public List<XingZheng> descOrederTeamScoreXingZheng(int teamLeaderId);
+
+	//添加团队负责人
+	public int addTeamLeader(TeamLeader teamLeader);
 }

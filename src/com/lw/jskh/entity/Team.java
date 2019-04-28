@@ -6,10 +6,10 @@ package com.lw.jskh.entity;
 
 public class Team {
     private int id;
-    private String teamName;
-    private String teamLeader ;
-    private String dep;
-    private String type;
+    private String teamName;  //团队名称
+    private String teamLeader ; //姓名
+    private String dep; //学院
+    private String type;  //工作
 	public int getId() {
 		return id;
 	}

@@ -6,127 +6,79 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="786c648d-167a-41ff-a5cb-9be66d139fcc" name="Default Changelist" comment="项目提交测试">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff3cc7e9-bc05-4013-85a3-03ad0861485a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff3cc7e9-bc05-4013-85a3-03ad0861485a.xml" afterDir="false" />
+    <list default="true" id="786c648d-167a-41ff-a5cb-9be66d139fcc" name="Default Changelist" comment="杨秀林第四次提交，增加了院长登录界面">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/collegeLeader/collegeLeaderMain.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/collegeLeaderRegister.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/css/index_collegeLeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/css/index_teaLeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/index_collegeLeader.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/teamLeaderRegister.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/AdminDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/DepDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/JiaoShiXiangDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/LevelDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/TeacherDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/TeamDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/TprizeUploadDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/XKHDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/XingZhengDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/impl/XprizeUploadDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderExitServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderLoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/RegCollegeLeaderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/CollegeLeaderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeLeaderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/CollegeLeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff3cc7e9-bc05-4013-85a3-03ad0861485a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacherSet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacherSet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/teacherRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacherRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teamLeader/teamShowTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teamLeader/teamShowTeacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/AddTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/AddTeacherServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/AddXingZhengServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/AddXingZhengServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/RegTeacherServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherKhServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherKhServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherLoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherUpPicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeacherUpPicServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamKhServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamKhServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamLeaderLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamLeaderLoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamLeaderToTeacherKHServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/TeamLeaderToTeacherKHServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/UpdateTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/UpdateTeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengLoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengPrizeAddPicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengPrizeAddPicServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengUpPicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/action/XingZhengUpPicServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Dep.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Dep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/JiaoShiXiang.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/JiaoShiXiang.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/TeamLeaderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/TeamLeaderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/AdminDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/AdminDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/DepDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/DepDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/JiaoShiXiangDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/JiaoShiXiangDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/LevelDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/LevelDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeacherDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeacherDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeamDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeamDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TestDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TestDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TprizeUploadDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/TprizeUploadDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XKHDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XKHDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XingZhengDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XingZhengDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XprizeUploadDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/dao/impl/XprizeUploadDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/lw/jskh/entity/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/AddTeacherServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/AddXingZhengServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/RegTeacherServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/RegXingZhengServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TPrizeUploadDelServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeacherExitAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeacherKhServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeacherLoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeacherPrizeAddPicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeacherUpPicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeamKhServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeamLeaderExitServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeamLeaderLoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/TeamLeaderToTeacherKHServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/UpdateTeacherServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/UpdateXingZhengServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XPrizeUploadDelServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XingZhengExit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XingZhengKhServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XingZhengLoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XingZhengPrizeAddPicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/action/XingZhengUpPicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/AdminDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/DepDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/JiaoShiXiangDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/LevelDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/TeacherDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/TeamDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/TeamLeaderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/TprizeUploadDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/XKHDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/XingZhengDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/dao/XprizeUploadDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Dep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/JiaoShiXiang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Level.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/TKH.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/TeamLeader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/TprizeUpload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/XKH.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/XZKH.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/XingZheng.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/XingZhengXiang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/classes/com/lw/jskh/entity/XprizeUpload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/lib/commons-io-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/lib/mysql-connector-java-5.1.21-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/images/icon_error.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index_admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index_teacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index_teamLeader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index_xingzheng.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacherMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacherMyself.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacherSet.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacherUpPic.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacherUpload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacher_myself.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacher/teacher_ok.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teacherRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teacherTeamLeader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamAddTeacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamAddXingZheng.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamLeaderMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamLeaderToTeacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamLeaderToXingZheng.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamShowTeacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamShowXingZheng.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamTeacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamTeacherUpload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/teamXingZheng.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/teamLeader/xingzheng_team.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingZhengRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingZhengMyself.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingZhengSet.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingZhengUpPic.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingZhengUpload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingzhengMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/xingzheng/xingzheng_myself.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/AddXingZhengServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/AddXingZhengServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherUpPicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherUpPicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/UpdateTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/UpdateTeacherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengUpPicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengUpPicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jskh.sql" beforeDir="false" afterPath="$PROJECT_DIR$/jskh.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/action/RegTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/action/RegTeamLeaderServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/Dep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Dep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/JiaoShiXiang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/JiaoShiXiang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/dao/TeamLeaderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/TeamLeaderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/entity/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/lw/jskh/dao/impl/TestDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/lw/jskh/dao/impl/TestDaoImp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -152,6 +104,17 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="jskh@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jskh@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jskh@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jskh: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -161,78 +124,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengUpPicServlet.java">
+        <entry file="file://$PROJECT_DIR$/WebContent/css/register.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="56" column="13" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="56" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/GenericServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/xingzheng/xingZhengUpPic.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="45" column="45" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/annotation/WebServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="566">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherUpPicServlet.java">
+        <entry file="file://$PROJECT_DIR$/WebContent/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="126">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XPrizeUploadDelServlet.java">
+        <entry file="file://$PROJECT_DIR$/WebContent/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="29" column="11" selection-start-line="29" selection-end-line="30" />
+            <state relative-caret-position="-504">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/css/index_teacher.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/register.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -242,30 +185,15 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/XingZhengDaoImpl.java" />
-        <option value="$PROJECT_DIR$/WebContent/teamLeader/teamTeacherUpload.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/teacherRegister.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Admin.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Dep.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/JiaoShiXiang.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Score.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Team.java" />
-        <option value="$PROJECT_DIR$/WebContent/teacher/teacherSet.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/AddTeacherServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegTeacherServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegXingZhengServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherKhServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherPrizeAddPicServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeamKhServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderToTeacherKHServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TPrizeUploadDelServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/UpdateTeacherServlet.java" />
@@ -274,12 +202,46 @@
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengPrizeAddPicServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/XPrizeUploadDelServlet.java" />
-        <option value="$PROJECT_DIR$/jskh.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff3cc7e9-bc05-4013-85a3-03ad0861485a/console.sql" />
         <option value="$PROJECT_DIR$/WebContent/xingzheng/xingzheng_myself.jsp" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/AddXingZhengServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengUpPicServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeacherUpPicServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/WebContent/xingzheng/index_teamLeader1.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/index_teamLeader1.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/AddTeacherServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeacherDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java" />
+        <option value="$PROJECT_DIR$/WebContent/teamLeader/teamShowTeacher.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher1.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Team.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/test/com/lw/jskh/dao/impl/TestDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderLoginServlet.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/collegeLeader/collegeLeaderMain.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderExitServlet.java" />
+        <option value="$PROJECT_DIR$/WebContent/collegeLeader/collegeLeaderMain.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/css/index_teamLeader.css" />
+        <option value="$PROJECT_DIR$/WebContent/index.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/css/index_teaLeader.css" />
+        <option value="$PROJECT_DIR$/WebContent/css/index_collegeLeader.css" />
+        <option value="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/teacherRegister.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/TeamLeaderDao.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegTeacherServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegTeamLeaderServlet.java" />
+        <option value="$PROJECT_DIR$/WebContent/teamLeaderRegister.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/index_collegeLeader.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/collegeLeaderRegister.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/CollegeLeaderDao.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegCollegeLeaderServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/CollegeLeader.java" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeLeaderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/jskh.sql" />
+        <option value="$PROJECT_DIR$/WebContent/css/register.css" />
       </list>
     </option>
   </component>
@@ -297,9 +259,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="950" />
-    <option name="height" value="1080" />
+    <option name="x" value="588" />
+    <option name="y" value="9" />
+    <option name="width" value="833" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -307,6 +270,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,13 +289,6 @@
               <item name="jskh" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="jskh_Web_exploded" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
@@ -370,20 +328,46 @@
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
               <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lw" type="462c0819:PsiDirectoryNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lw" type="462c0819:PsiDirectoryNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lw" type="462c0819:PsiDirectoryNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jskh" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
               <item name="jskh" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="xingzheng" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,18 +376,32 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556381196928" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/jskh_Web_exploded" />
+    <property name="last_opened_file_path" value="D:/JS/Jquery" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.1469712" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA\jskh\WebContent" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lw.jskh.action" />
+      <recent name="com.lw.jskh.dao.impl" />
+      <recent name="com.lw.jskh.entity" />
+      <recent name="com.lw.jskh.dao" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/WebContent/upload" />
+      <recent name="D:\IDEA\jskh\WebContent" />
+      <recent name="D:\IDEA\jskh\WebContent\css" />
+      <recent name="D:\IDEA\jskh\WebContent\collegeLeader" />
+      <recent name="D:\IDEA\jskh\WebContent\images" />
+      <recent name="D:\IDEA\jskh\WebContent\xingzheng" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,6 +418,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="jskh:Web exploded">
@@ -427,11 +427,6 @@
             <option name="CONTEXT_PATH" value="/jskh_Web_exploded" />
           </settings>
         </artifact>
-        <file path="$PROJECT_DIR$/WebContent/upload">
-          <settings>
-            <option name="CONTEXT_PATH" value="/upload" />
-          </settings>
-        </file>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_jskh_2" />
@@ -512,6 +507,14 @@
       <workItem from="1555329894606" duration="587000" />
       <workItem from="1555332737723" duration="2664000" />
       <workItem from="1555374922865" duration="5668000" />
+      <workItem from="1555397375250" duration="6059000" />
+      <workItem from="1555460570850" duration="1824000" />
+      <workItem from="1556083702780" duration="1280000" />
+      <workItem from="1556169312377" duration="14814000" />
+      <workItem from="1556259130723" duration="8937000" />
+      <workItem from="1556340408410" duration="15282000" />
+      <workItem from="1556417339887" duration="2201000" />
+      <workItem from="1556419596340" duration="1048000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交测试">
       <created>1555304368164</created>
@@ -527,40 +530,56 @@
       <option name="project" value="LOCAL" />
       <updated>1555304518554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="杨秀林第三次提交，增加了院长登录界面">
+      <created>1556344277192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556344277192</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22697000" />
+    <option name="totallyTimeSpent" value="74142000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2366453" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8855835" visible="true" weight="0.25113463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.11441647" side_tool="true" weight="0.022692889" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32944915" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49848714" weight="0.3276923" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49546143" weight="0.48923078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993644" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32980973" />
       <window_info anchor="bottom" id="Duplicates" order="8" weight="0.32944915" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.5529661" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32944915" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.39636913" side_tool="true" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3276923" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" weight="0.32944915" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.32944915" />
+      <window_info anchor="bottom" id="Version Control" order="16" sideWeight="0.60363084" visible="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Thumbnails" order="17" weight="0.32944915" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -568,426 +587,413 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32959402" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.17574786" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.16944024" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2366453" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32944915" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993644" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32980973" />
-      <window_info anchor="bottom" id="Duplicates" order="8" weight="0.32944915" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.5529661" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32980973" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" weight="0.32944915" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="bottom" id="Thumbnails" order="17" weight="0.32944915" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32959402" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.17574786" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目提交测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目提交测试" />
+    <MESSAGE value="杨秀林第一次提交，增加了院长登录界面" />
+    <MESSAGE value="杨秀林第二次提交，增加了院长登录界面" />
+    <MESSAGE value="杨秀林第三次提交，增加了院长登录界面" />
+    <MESSAGE value="杨秀林第四次提交，增加了院长登录界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="杨秀林第四次提交，增加了院长登录界面" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/XZKH.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderExitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/AdminDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/Dep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/JiaoShiXiangDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/JiaoShiXiang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teacher/teacherMyself.jsp">
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teacher/teacherUpPic.jsp">
+    <entry file="file://$PROJECT_DIR$/杨秀林第三次提交，增加了院长登录界面.patch" />
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/CollegeLeaderLoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherExitAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="166">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/AddTeacherServlet.java">
+    <entry file="file://$PROJECT_DIR$/项目提交测试.patch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index_teamLeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="-2709" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index_teacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/RegTeacherServlet.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/index_collegeLeader.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="315">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/RegXingZhengServlet.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/index_teaLeader.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="132">
+          <caret line="90" column="21" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherKhServlet.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/index_teamLeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="153">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/teacherRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_dep">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_jiaoshixiang">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_tkh">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_xingzheng">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_xingzhengxiang">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_xprizeupload">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_xkh">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_tprizeupload">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_team">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_teamleader">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_level">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherPrizeAddPicServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        <state relative-caret-position="198">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderExitServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/XingZhengDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/TeamDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="30" column="93" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherLoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeacherDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="163">
+          <caret line="297" column="6" selection-start-line="297" selection-start-column="6" selection-end-line="312" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeamKhServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/TeamLeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="34" column="41" selection-start-line="34" selection-end-line="35" />
+        <state relative-caret-position="189">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="29" selection-start-line="28" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://2e5967f4-3220-4f40-a72b-890bf07101d3/schema/jskh/table/tb_collegeleader">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderToTeacherKHServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/AddTeacherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="30" column="30" selection-start-line="30" selection-end-line="31" />
+        <state relative-caret-position="105">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TPrizeUploadDelServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/RegXingZhengServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="105">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/TeacherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index_collegeLeader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/teamLeaderRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="77" column="42" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/RegTeamLeaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="41" column="47" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="41" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/CollegeLeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/collegeLeaderRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/TeamLeaderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/impl/TeamLeaderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="410" column="1" lean-forward="true" selection-start-line="383" selection-start-column="4" selection-end-line="410" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/CollegeLeaderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/RegCollegeLeaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jskh.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3696">
-          <caret line="154" column="48" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="48" />
+        <state relative-caret-position="904">
+          <caret line="772" column="71" lean-forward="true" selection-start-line="772" selection-start-column="71" selection-end-line="772" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamShowTeacher.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeLeaderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="384" column="21" lean-forward="true" selection-start-line="384" selection-start-column="21" selection-end-line="384" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamTeacherUpload.jsp">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/index_teacher.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="21">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teacher/teacherUpload.jsp">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="-504">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/entity/XingZhengXiang.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamLeaderToXingZheng.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/xingzheng/xingzheng_myself.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11688">
-          <caret line="487" column="7" selection-start-line="487" selection-start-column="7" selection-end-line="487" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/AddXingZhengServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teacher/teacherMain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teacher/teacherSet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/UpdateXingZhengServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengExit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengKhServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengPrizeAddPicServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/upload/papers.co-nm08-fox-cold-winter-red-nature-animal-25-wallpaper.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/UpdateTeacherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XPrizeUploadDelServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="29" column="11" selection-start-line="29" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/xingzheng/xingZhengUpPic.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="45" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/GenericServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="269" selection-start-line="269" selection-end-line="269" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/XingZhengUpPicServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="56" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ff3cc7e9-bc05-4013-85a3-03ad0861485a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/annotation/WebServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeacherUpPicServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state relative-caret-position="126">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1033,7 +1039,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

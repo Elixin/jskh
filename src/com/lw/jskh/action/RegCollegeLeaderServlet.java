@@ -1,23 +1,26 @@
 package com.lw.jskh.action;
 
-import java.io.IOException;
+import com.lw.jskh.dao.CollegeLeaderDao;
+import com.lw.jskh.dao.TeamLeaderDao;
+import com.lw.jskh.dao.impl.CollegeLeaderDaoImpl;
+import com.lw.jskh.dao.impl.TeamLeaderDaoImpl;
+import com.lw.jskh.entity.CollegeLeader;
+import com.lw.jskh.entity.TeamLeader;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.lw.jskh.dao.TeacherDao;
-import com.lw.jskh.dao.impl.TeacherDaoImpl;
-import com.lw.jskh.entity.Teacher;
+import java.io.IOException;
 
 
-@WebServlet("/regTeacher")
-public class RegTeacherServlet extends HttpServlet {
+@WebServlet("/regCollegeLeader")
+public class RegCollegeLeaderServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-  
-    public RegTeacherServlet() {
+
+
+    public RegCollegeLeaderServlet() {
         super();
        
     }
@@ -30,20 +33,22 @@ public class RegTeacherServlet extends HttpServlet {
 		String trueName = request.getParameter("trueName");
 		String password = request.getParameter("password");
 		String level = request.getParameter("level");
-		String team = request.getParameter("team");
 		String note = request.getParameter("note");
 		String dep = request.getParameter("dep");
+		String teamType=request.getParameter("teamType");
 		//System.out.println(userName+","+trueName+","+team);
-		TeacherDao teacherDao = new TeacherDaoImpl();
-		Teacher teacher = new Teacher();
-		teacher.setUsername(userName);
-		teacher.setTrueName(trueName);
-		teacher.setTeam(team);
-		teacher.setPassword(password);
-		teacher.setDep(dep);
-		teacher.setNote(note);
-		teacher.setLevel(level);
-		int i = teacherDao.addTeacher(teacher);
+		CollegeLeaderDao collegeLeaderDao=new CollegeLeaderDaoImpl();
+		CollegeLeader collegeLeader=new CollegeLeader();
+		TeamLeader teamLeader=new TeamLeader();
+		teamLeader.setUsername(userName);  //用户名
+		teamLeader.setTrueName(trueName);     //真实姓名
+		teamLeader.setPassword(password);  //密码
+		teamLeader.setDep(dep);  //二级学院名
+		teamLeader.setNote(note);  //备注
+		teamLeader.setPosition(level);  //职位
+		teamLeader.setTeamType(teamType); //团队类型
+
+		int i=collegeLeaderDao.addCollegeLeader(collegeLeader);
 		if(i==-1) {
 			response.sendRedirect("teacherRegister.jsp?info=no");
 		}else {

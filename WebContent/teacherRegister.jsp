@@ -74,7 +74,7 @@
             <input type="text" name="password2" id="password2" required="required" placeholder="与上面输入密码相同" />
         </label>
         <label>
-            <span>职称</span>
+            <span>职务</span>
             <select class="zposition" name ="level">
                 <%
                     for(Level level : levels){

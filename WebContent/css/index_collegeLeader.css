@@ -1,0 +1,101 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background:url(../images/timg.jpg) no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+#head {
+    height: 120px;
+    width: 100px;
+    background-color: #66CCCC;
+    text-align: center;
+    position: relative;
+}
+
+
+.logGet {
+    height: 508px;
+    width: 400px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 0;
+    animation: myone 1s linear forwards;
+}
+
+.logC input{
+    width: 100%;
+    height: 45px;
+    background-color: #ee7700;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.p1 {
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 30px;
+    width: 86%;
+
+}
+
+.logDtip {
+    height: 80px;
+    width: 86%;
+    border-bottom: 1px solid #ee7700;
+    margin-bottom: 60px;
+    margin-top: 2px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.lgD input {
+    width: 100%;
+    height: 42px;
+    text-indent: 2.5rem;
+    font-size: 20px;
+}
+
+.lgD {
+    width: 86%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logC {
+    width: 86%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.zc{
+    text-decoration: none;
+    display: inline-block;
+    color: grey;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 36%;
+
+
+}
+@keyframes myone{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

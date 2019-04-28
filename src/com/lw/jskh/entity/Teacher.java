@@ -19,10 +19,16 @@ public class Teacher implements Comparable<Teacher>{
 	private int myselftScore; //自评得分
 	private int teamScore; //团队负责人给分
 	private int adminScore; //院级领导给分
-	
-	public Teacher() {
-		super();
-	}
+
+
+//	//团队负责人排序用
+//	public Teacher(int id, String trueName, int teamScore, int myselftScore) {
+//		super();
+//		this.id=id;
+//		this.trueName=trueName;
+//		this.teamScore=teamScore;
+//		this.myselftScore=myselftScore;
+//	}
 
 	public Teacher(String username, String password, String trueName, String level, String team, String dep,
 			String note,int open) {
@@ -62,6 +68,10 @@ public class Teacher implements Comparable<Teacher>{
 		this.dep = dep;
 		this.note = note;
 		
+	}
+
+	public Teacher() {
+
 	}
 
 	@Override

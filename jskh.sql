@@ -767,3 +767,19 @@ INSERT INTO `tb_xprizeupload` VALUES (54, 9, '2009082017_李青野\\03 《借鉴
 INSERT INTO `tb_xprizeupload` VALUES (55, 12, '2009082017_李青野\\huoban_03_r1_c7.gif', '13', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+CREATE TABLE `tb_collegeleader`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '院级负责人主键',
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '院级负责人用户名，规定为院级负责人的工号',
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户密码，默认密码，用户工号后6位',
+  `trueName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '院级负责人真实姓名',
+  `position` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' COMMENT '职位',
+  `teamType` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' COMMENT '学院类型，分教学和行政',
+  `dep` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' COMMENT '所在部门',
+  `note` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' COMMENT '备注',
+  `open` tinyint(4) DEFAULT 0 COMMENT '0:可以登录 1:不许登录',
+  `pic` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '' COMMENT '团队负责人',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+INSERT INTO `tb_collegeleader` VALUES (2, '2004012011', '123456', '杨志勇', '院长', '行政', '信息工程学院', '院长，正高，博士', 0, '');

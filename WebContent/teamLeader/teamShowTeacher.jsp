@@ -47,18 +47,29 @@
                  <th width="200px" align="center">自评得分</th>
            </tr> 
       <%
-         Teacher teacher = null;
-        	for(int i=0 ; i< teachers.size() ; i++){
-        		teacher = teachers.get(i);
+          List<Teacher1> teacherList=new ArrayList<>();
+          List<Teacher1> teacherList1=new ArrayList<>();
+          teacherList1.clear();
+          Teacher teacher = null;
+          for (int i=0;i<teachers.size();i++){
+              teacherList.add(new Teacher1(teachers.get(i).getId(),teachers.get(i).getTrueName(),
+                      teachers.get(i).getTeamScore(),teachers.get(i).getMyselftScore()));
+              System.out.println(teacherList.get(i).getMyselftScore1());
+              System.out.println();
+          }
+          teacherList1.addAll(Teacher1.sortCard(teacherList));
+        	for(int i=0 ; i< teacherList1.size() ; i++){
+//        	    teacher=teachers.get(i);
         		%>
         		 <tr>
-                   <td align="center" height="30"><%=i %></td>
-                   <td align="center"><font color='red' size='5'><a href="teamLeaderToTeacher.jsp?id=<%=teacher.getId()%>"><%=teacher.getTrueName() %></a></font></td>
-                   <td align="center"><%=teacher.getTeamScore() %></td>
-                   <td align="center"><%=teacher.getMyselftScore() %></td>
+                   <td align="center" height="30"><%=i+1 %></td>
+                   <td align="center"><font color='red' size='5'><a href="teamLeaderToTeacher.jsp?id=<%=teacherList1.get(i).getId1()%>"><%=teacherList1.get(i).getTrueName1() %></a></font></td>
+                   <td align="center"><%=teacherList1.get(i).getTeamScore1() %></td>
+                   <td align="center"><%=teacherList1.get(i).getMyselftScore1() %></td>
                </tr>
          <%
         	}
+        	teacherList.clear();
          %>
       </table>
       <%

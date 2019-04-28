@@ -6,8 +6,6 @@ body{
     background:url(../images/timg.jpg) no-repeat;
     background-size:auto;
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
-
 }
 .username input{
 
@@ -49,7 +47,7 @@ body{
     display: block;
     float: left;
     margin-left: 120px;
-    margin-top: 30px;
+    /*margin-top: 10px;*/
 }
 
 .bigbox label {
@@ -58,9 +56,9 @@ body{
 }
 
 .fillhead {
-    height: 100px;
+    height: 50px;
     width: 99px;
-    margin: 20px 20px 20px 20px;
+    /*margin: 20px 20px 20px 20px;*/
     border: none;
     /*            background: url("img/Example.jpg");*/
     overflow: hidden;
@@ -80,7 +78,7 @@ body{
     float: left;
     text-align: right;
     padding-right: 10px;
-    margin-top: 10px;
+    margin-top: 2px;
     font-weight: bold;
     color: black;
     font-size: 15px;
@@ -93,7 +91,7 @@ body{
 }
 
 .Main-sex input[type=checkbox] {
-    margin-top: 6px;
+    /*margin-top: 6px;*/
 }
 
 .bigbox input[type="text"],
@@ -102,7 +100,7 @@ body{
     height: 25px;
     width: 70%;
     line-height: 15px;
-    padding: 5px 0px 5px 5px;
+    padding: 2px 0px 5px 5px;
     margin-bottom: 16px;
     margin-right: 6px;
     margin-top: 2px;
@@ -121,6 +119,12 @@ body{
     margin-left: 20px;
 }
 .team {
+    width: 100px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.teamType{
     width: 100px;
     height: 30px;
     margin-top: 6px;
