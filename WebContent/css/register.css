@@ -6,7 +6,7 @@ body{
     background:url(../images/timg.jpg) no-repeat;
     background-size:auto;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 
 }
 .username input{
