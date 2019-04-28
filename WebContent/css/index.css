@@ -12,9 +12,9 @@
 			}
 		    body{
 		    	background:url(../images/timg.jpg) no-repeat;
-		    	background-size: auto;
-		    	background-size: 100%;
-                text-align: center;
+				background-size: auto;
+				background-size: 100%;
+				text-align: center;
 		    }		
 			.center{
 				width: 700px;
