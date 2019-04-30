@@ -2,6 +2,7 @@ package com.lw.jskh.dao;
 
 import java.util.List;
 
+import com.lw.jskh.entity.TKH;
 import com.lw.jskh.entity.Teacher;
 import com.lw.jskh.entity.TeamLeader;
 import com.lw.jskh.entity.XingZheng;
@@ -34,4 +35,9 @@ public interface TeamLeaderDao {
 
 	//添加团队负责人
 	public int addTeamLeader(TeamLeader teamLeader);
+	//按ID查找团队负责人人员
+	public TeamLeader getTeamLeaderById(int id);
+
+	//团队人员考核
+	public TKH queryTHK(int id);
 }

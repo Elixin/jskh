@@ -6,6 +6,7 @@ public class TKH {   //任课教师考核得分表
 
 	private int id;  //
 	private Teacher teacher;  // 任课教师
+	private TeamLeader teamLeader;  //团队负责人
 	private String teacherName;  //教师名字
 	private int[][] noScore ; //第n项得分,加分，减分，自评分，团队负责人给分，院级领导给分
 	private String khTime_myself ; //自评时间
@@ -30,6 +31,12 @@ public class TKH {   //任课教师考核得分表
 	}
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
+	}
+	public TeamLeader getTeamLeader() {
+		return teamLeader;
+	}
+	public void setTeamLeader(TeamLeader teamLeader) {
+		this.teamLeader = teamLeader;
 	}
 	public String getTeacherName() {
 		return teacherName;

@@ -15,6 +15,7 @@ public class CollegeLeaderDaoImpl extends BaseDao implements CollegeLeaderDao {
 
 	TeacherDao teacherDao ;
 	XingZhengDao xingZhengDao ;
+	TeamLeaderDao teamLeaderDao;
 
 	public CollegeLeaderDaoImpl() {
 		teacherDao = new TeacherDaoImpl();
@@ -53,119 +54,131 @@ public class CollegeLeaderDaoImpl extends BaseDao implements CollegeLeaderDao {
 	}
 
 
-//
+
+
+	//
 //	@Override
 //	public List<TeamLeader> getCollegeTeam(int collegeTeamId) {
 //		return null;
 //	}
-//
-//	@Override
-//	public List<Teacher> getTeamTeacher(int teamLeaderId)  {
-//		List<Teacher> teachers = new ArrayList<Teacher>();
-//		try {
-//			String sql = "select * from tb_teacher where tb_teacher.team = (select managerTeam  from tb_teamleader where id = ? ) ";
-//			Object[] params={teamLeaderId};
-//			ResultSet rs=this.executeSQL(sql, params);
-//			while(rs.next()){
-//				//封装教师对象
-//				Teacher teacher = new Teacher();
-//				teacher.setId(rs.getInt("id"));
-//				teacher.setUsername(rs.getString("userName"));
-//				teacher.setTrueName(rs.getString("trueName"));
-//				teacher.setLevel(rs.getString("level"));
-//				teacher.setTeam(rs.getString("team"));
-//				teacher.setDep(rs.getString("dep"));
-//				teacher.setNote(rs.getString("note"));
-//				teacher.setOpen(rs.getInt("open"));
-//				teacher.setPic(rs.getString("pic"));
-//				teachers.add(teacher);
-//			}
-//		}catch (SQLException e) {
-//			e.printStackTrace();
-//		}finally{
-//			this.closeResource();
-//		}
-//		return teachers;
-//	}
-//
-//	@Override
-//	public int teamLeaderTestTeacher(int tid, String[] teamLeaderScore, String[] teamLeaderNote) {
+
+	@Override
+	public List<TeamLeader> getCollegeTeam(int collegeTeamId) {
+		List<TeamLeader> teamLeaders = new ArrayList<TeamLeader>();
+		try {
+			String sql = "select * from tb_teamLeader where tb_teamLeader.dep = (select dep  from tb_collegeleader where id = ? ) ";
+			Object[] params={collegeTeamId};
+			ResultSet rs=this.executeSQL(sql, params);
+			while(rs.next()){
+				//封装团队负责人对象
+				TeamLeader teamLeader=new TeamLeader();
+				teamLeader.setId(rs.getInt("id"));
+				teamLeader.setUsername(rs.getString("userName"));
+				teamLeader.setTrueName(rs.getString("trueName"));
+				teamLeader.setPosition(rs.getString("position"));
+				teamLeader.setManagerTeam(rs.getString("managerTeam"));
+				teamLeader.setTeamType(rs.getString("teamType"));
+				teamLeader.setDep(rs.getString("dep"));
+				teamLeader.setNote(rs.getString("note"));
+				teamLeader.setOpen(rs.getInt("open"));
+				teamLeader.setPic(rs.getString("pic"));
+				teamLeaders.add(teamLeader);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			this.closeResource();
+		}
+		return teamLeaders;
+	}
+
+	//给团队负责人打分
+	@Override
+	public int collegeLeaderTestTeamLeader(int tid, String[] teamLeaderScore, String[] teamLeaderNote) {
 //		Teacher teacher = teacherDao.getTeacherById(tid);
-//		int tkh_id=0;
-//		try {
-//			long t = System.currentTimeMillis();
-//			Date time=new Date(t);
-//			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//			System.out.println(sdf.format(time));
-//
-//			int total_leader = 0 ;
-//
-//			for( String s : teamLeaderScore) {
-//				int x = Integer.parseInt(s);
-//				total_leader += x;
-//			}
-//
-//			System.out.println(total_leader);
-//
-//			int id = teacherDao.queryTid(tid);
-//
-//			String sql = "";
-//			if(id ==-1) {  //考核表中无记录，添加新记录
-//
-//			  sql="insert into tb_tkh(tid,teacherName,no1_leader,no2_leader,no3_leader,no4_leader,no5_leader,no6_leader,no7_leader,no8_leader,no9_leader,no10_leader,"
-//					+ "no11_leader,no12_leader,no13_leader,no14_leader,no15_leader,no16_leader,no17_leader,no18_leader,no19_leader,no20_leader,no21_leader,no22_leader,"
-//					+ "no23_leader,no24_leader,no25_leader,no26_leader,total_leader,khTime_leader,no1_leader_note,no2_leader_note,no3_leader_note,no4_leader_note,"
-//					+ "no5_leader_note,no6_leader_note,no7_leader_note,no8_leader_note,no9_leader_note,no10_leader_note,no11_leader_note,no12_leader_note,no13_leader_note,"
-//					+ "no14_leader_note,no15_leader_note,no16_leader_note,no17_leader_note,no18_leader_note,no19_leader_note,no20_leader_note,no21_leader_note,no22_leader_note,"
-//					+ "no23_leader_note,no24_leader_note,no25_leader_note,no26_leader_note) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,"
-//					+ "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-//			  Object[]   params={teacher.getId(),teacher.getTrueName(),teamLeaderScore[0],teamLeaderScore[1],teamLeaderScore[2],teamLeaderScore[3],teamLeaderScore[4],teamLeaderScore[5],teamLeaderScore[6],teamLeaderScore[7],teamLeaderScore[8],teamLeaderScore[9],teamLeaderScore[10],teamLeaderScore[11],teamLeaderScore[12],teamLeaderScore[13],
-//						teamLeaderScore[14],teamLeaderScore[15],teamLeaderScore[16],teamLeaderScore[17],teamLeaderScore[18],teamLeaderScore[19],teamLeaderScore[20],teamLeaderScore[21],
-//						teamLeaderScore[22],teamLeaderScore[23],teamLeaderScore[24],teamLeaderScore[25],total_leader,sdf.format(time),teamLeaderNote[0],teamLeaderNote[1],teamLeaderNote[2],
-//						teamLeaderNote[3],teamLeaderNote[4],teamLeaderNote[5],teamLeaderNote[6],teamLeaderNote[7],teamLeaderNote[8],teamLeaderNote[9],teamLeaderNote[10],teamLeaderNote[11],teamLeaderNote[12],
-//						teamLeaderNote[13],teamLeaderNote[14],teamLeaderNote[15],teamLeaderNote[16],teamLeaderNote[17],teamLeaderNote[18],teamLeaderNote[19],teamLeaderNote[20],teamLeaderNote[21],teamLeaderNote[22],
-//						teamLeaderNote[23],teamLeaderNote[24],teamLeaderNote[25]};
-//			    int i=this.executeUpdate(sql, params);
-//				if(i>0){
-//					System.out.println("教师自评成功！");
-//				}
-//				ps=conn.prepareStatement("select LAST_INSERT_ID()"); //返回插入最后一条记录的ID值
-//				ResultSet rs = ps.executeQuery();
-//				if (rs.next())tkh_id = rs.getInt(1);
-//			}else {    //考核表已有记录，修改记录
-//				 sql="update tb_tkh set tid=?,teacherName=?,no1_leader=?,no2_leader=?,no3_leader=?,no4_leader=?,no5_leader=?,no6_leader=?,no7_leader=?,no8_leader=?,no9_leader=?,no10_leader=?,"
-//							+ "no11_leader=?,no12_leader=?,no13_leader=?,no14_leader=?,no15_leader=?,no16_leader=?,no17_leader=?,no18_leader=?,no19_leader=?,no20_leader=?,no21_leader=?,no22_leader=?,"
-//							+ "no23_leader=?,no24_leader=?,no25_leader=?,no26_leader=?,total_leader=?,khTime_leader=?,no1_leader_note=?,no2_leader_note=?,no3_leader_note=?,no4_leader_note=?,"
-//							+ "no5_leader_note=?,no6_leader_note=?,no7_leader_note=?,no8_leader_note=?,no9_leader_note=?,no10_leader_note=?,no11_leader_note=?,no12_leader_note=?,no13_leader_note=?,"
-//							+ "no14_leader_note=?,no15_leader_note=?,no16_leader_note=?,no17_leader_note=?,no18_leader_note=?,no19_leader_note=?,no20_leader_note=?,no21_leader_note=?,no22_leader_note=?,"
-//							+ "no23_leader_note=?,no24_leader_note=?,no25_leader_note=?,no26_leader_note=? where id=?";
-//				 Object[]  params={teacher.getId(),teacher.getTrueName(),teamLeaderScore[0],teamLeaderScore[1],teamLeaderScore[2],teamLeaderScore[3],teamLeaderScore[4],teamLeaderScore[5],teamLeaderScore[6],teamLeaderScore[7],teamLeaderScore[8],teamLeaderScore[9],teamLeaderScore[10],teamLeaderScore[11],teamLeaderScore[12],teamLeaderScore[13],
-//							teamLeaderScore[14],teamLeaderScore[15],teamLeaderScore[16],teamLeaderScore[17],teamLeaderScore[18],teamLeaderScore[19],teamLeaderScore[20],teamLeaderScore[21],
-//							teamLeaderScore[22],teamLeaderScore[23],teamLeaderScore[24],teamLeaderScore[25],total_leader,sdf.format(time),teamLeaderNote[0],teamLeaderNote[1],teamLeaderNote[2],
-//							teamLeaderNote[3],teamLeaderNote[4],teamLeaderNote[5],teamLeaderNote[6],teamLeaderNote[7],teamLeaderNote[8],teamLeaderNote[9],teamLeaderNote[10],teamLeaderNote[11],teamLeaderNote[12],
-//							teamLeaderNote[13],teamLeaderNote[14],teamLeaderNote[15],teamLeaderNote[16],teamLeaderNote[17],teamLeaderNote[18],teamLeaderNote[19],teamLeaderNote[20],teamLeaderNote[21],teamLeaderNote[22],
-//							teamLeaderNote[23],teamLeaderNote[24],teamLeaderNote[25],id};
-//				  int i=this.executeUpdate(sql, params);
-//					if(i>0){
-//						System.out.println("团队负责人打分成功！");
-//					}
-//					tkh_id = id;
-//			}
-//
-//
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}finally{
-//			this.closeResource();
-//		}
-//
-//		System.out.println(tkh_id);
-//
-//
-//		return tkh_id;
-//
-//	}
+		System.out.println(tid+"   我是团队负责人");
+		TeamLeader teamLeader= new TeamLeader();
+		try {
+			teamLeader = teamLeaderDao.getTeamLeaderById(tid);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("我来了团队");
+		int tkh_id=0;
+		try {
+			long t = System.currentTimeMillis();
+			Date time=new Date(t);
+			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			System.out.println(sdf.format(time));
+
+			int total_leader = 0 ;
+
+			for( String s : teamLeaderScore) {
+				int x = Integer.parseInt(s);
+				total_leader += x;
+			}
+
+			System.out.println(total_leader);
+
+			int id = teacherDao.queryTid(tid);
+
+			String sql = "";
+			if(id ==-1) {  //考核表中无记录，添加新记录
+
+			  sql="insert into tb_teamleaderkh(teamleaderid,teamleaderName,no1_leader,no2_leader,no3_leader,no4_leader,no5_leader,no6_leader,no7_leader,no8_leader,no9_leader,no10_leader,"
+					+ "no11_leader,no12_leader,no13_leader,no14_leader,no15_leader,no16_leader,no17_leader,no18_leader,no19_leader,no20_leader,no21_leader,no22_leader,"
+					+ "no23_leader,no24_leader,no25_leader,no26_leader,total_leader,khTime_leader,no1_leader_note,no2_leader_note,no3_leader_note,no4_leader_note,"
+					+ "no5_leader_note,no6_leader_note,no7_leader_note,no8_leader_note,no9_leader_note,no10_leader_note,no11_leader_note,no12_leader_note,no13_leader_note,"
+					+ "no14_leader_note,no15_leader_note,no16_leader_note,no17_leader_note,no18_leader_note,no19_leader_note,no20_leader_note,no21_leader_note,no22_leader_note,"
+					+ "no23_leader_note,no24_leader_note,no25_leader_note,no26_leader_note) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,"
+					+ "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			  Object[]   params={teamLeader.getId(),teamLeader.getTrueName(),teamLeaderScore[0],teamLeaderScore[1],teamLeaderScore[2],teamLeaderScore[3],teamLeaderScore[4],teamLeaderScore[5],teamLeaderScore[6],teamLeaderScore[7],teamLeaderScore[8],teamLeaderScore[9],teamLeaderScore[10],teamLeaderScore[11],teamLeaderScore[12],teamLeaderScore[13],
+						teamLeaderScore[14],teamLeaderScore[15],teamLeaderScore[16],teamLeaderScore[17],teamLeaderScore[18],teamLeaderScore[19],teamLeaderScore[20],teamLeaderScore[21],
+						teamLeaderScore[22],teamLeaderScore[23],teamLeaderScore[24],teamLeaderScore[25],total_leader,sdf.format(time),teamLeaderNote[0],teamLeaderNote[1],teamLeaderNote[2],
+						teamLeaderNote[3],teamLeaderNote[4],teamLeaderNote[5],teamLeaderNote[6],teamLeaderNote[7],teamLeaderNote[8],teamLeaderNote[9],teamLeaderNote[10],teamLeaderNote[11],teamLeaderNote[12],
+						teamLeaderNote[13],teamLeaderNote[14],teamLeaderNote[15],teamLeaderNote[16],teamLeaderNote[17],teamLeaderNote[18],teamLeaderNote[19],teamLeaderNote[20],teamLeaderNote[21],teamLeaderNote[22],
+						teamLeaderNote[23],teamLeaderNote[24],teamLeaderNote[25]};
+			    int i=this.executeUpdate(sql, params);
+				if(i>0){
+					System.out.println("教师自评成功！");
+				}
+				ps=conn.prepareStatement("select LAST_INSERT_ID()"); //返回插入最后一条记录的ID值
+				ResultSet rs = ps.executeQuery();
+				if (rs.next())tkh_id = rs.getInt(1);
+			}else {    //考核表已有记录，修改记录
+				 sql="update tb_teamleaderkh set teamleaderid=?,teamleaderName=?,no1_leader=?,no2_leader=?,no3_leader=?,no4_leader=?,no5_leader=?,no6_leader=?,no7_leader=?,no8_leader=?,no9_leader=?,no10_leader=?,"
+							+ "no11_leader=?,no12_leader=?,no13_leader=?,no14_leader=?,no15_leader=?,no16_leader=?,no17_leader=?,no18_leader=?,no19_leader=?,no20_leader=?,no21_leader=?,no22_leader=?,"
+							+ "no23_leader=?,no24_leader=?,no25_leader=?,no26_leader=?,total_leader=?,khTime_leader=?,no1_leader_note=?,no2_leader_note=?,no3_leader_note=?,no4_leader_note=?,"
+							+ "no5_leader_note=?,no6_leader_note=?,no7_leader_note=?,no8_leader_note=?,no9_leader_note=?,no10_leader_note=?,no11_leader_note=?,no12_leader_note=?,no13_leader_note=?,"
+							+ "no14_leader_note=?,no15_leader_note=?,no16_leader_note=?,no17_leader_note=?,no18_leader_note=?,no19_leader_note=?,no20_leader_note=?,no21_leader_note=?,no22_leader_note=?,"
+							+ "no23_leader_note=?,no24_leader_note=?,no25_leader_note=?,no26_leader_note=? where id=?";
+				 Object[]  params={teamLeader.getId(),teamLeader.getTrueName(),teamLeaderScore[0],teamLeaderScore[1],teamLeaderScore[2],teamLeaderScore[3],teamLeaderScore[4],teamLeaderScore[5],teamLeaderScore[6],teamLeaderScore[7],teamLeaderScore[8],teamLeaderScore[9],teamLeaderScore[10],teamLeaderScore[11],teamLeaderScore[12],teamLeaderScore[13],
+							teamLeaderScore[14],teamLeaderScore[15],teamLeaderScore[16],teamLeaderScore[17],teamLeaderScore[18],teamLeaderScore[19],teamLeaderScore[20],teamLeaderScore[21],
+							teamLeaderScore[22],teamLeaderScore[23],teamLeaderScore[24],teamLeaderScore[25],total_leader,sdf.format(time),teamLeaderNote[0],teamLeaderNote[1],teamLeaderNote[2],
+							teamLeaderNote[3],teamLeaderNote[4],teamLeaderNote[5],teamLeaderNote[6],teamLeaderNote[7],teamLeaderNote[8],teamLeaderNote[9],teamLeaderNote[10],teamLeaderNote[11],teamLeaderNote[12],
+							teamLeaderNote[13],teamLeaderNote[14],teamLeaderNote[15],teamLeaderNote[16],teamLeaderNote[17],teamLeaderNote[18],teamLeaderNote[19],teamLeaderNote[20],teamLeaderNote[21],teamLeaderNote[22],
+							teamLeaderNote[23],teamLeaderNote[24],teamLeaderNote[25],id};
+				  int i=this.executeUpdate(sql, params);
+					if(i>0){
+						System.out.println("团队负责人打分成功！");
+					}
+					tkh_id = id;
+			}
+
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			this.closeResource();
+		}
+
+		System.out.println(tkh_id);
+
+
+		return tkh_id;
+
+	}
 //
 //
 //	@Override

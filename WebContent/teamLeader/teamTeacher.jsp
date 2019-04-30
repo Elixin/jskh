@@ -3,14 +3,14 @@
 <%@ page import="java.util.*,com.lw.jskh.entity.*,com.lw.jskh.dao.*,com.lw.jskh.dao.impl.*"%>
  <%
     String path = request.getContextPath();
-   String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
  %>       
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../css/teamTeacher.css">
 <style type="text/css">
 <!--
 -->
@@ -20,38 +20,40 @@
 
 <body>
 <div align="center">
-<br><br>
- <%
-          TeamLeader teamLeader = (TeamLeader)session.getAttribute("teamLeader");
-          String year = "0000" ;
-          if(teamLeader==null){
-            response.sendRedirect("../index.jsp");
-          }else{
-            
-         
-            %>
-<h1><font color='blue' ><%=teamLeader.getPosition() %></font>:<font color='red' ><%=teamLeader.getTrueName() %></font></h1><br/><br/>
-
-
-    <h2><font color='red' ><%=teamLeader.getManagerTeam() %> </font>成员有：</h2>
     <br><br>
-      <%
+    <%
+        TeamLeader teamLeader = (TeamLeader)session.getAttribute("teamLeader");
+        String year = "0000" ;
+        if(teamLeader==null){
+            response.sendRedirect("../index.jsp");
+        }else{}
+    %>
+
+
+    <h1><font color='black' ><%=teamLeader.getPosition() %></font>:<font color='blue' size="50px"><%=teamLeader.getTrueName() %></font></h1><br/><br/>
+
+    <h2><font color='red' ><%=teamLeader.getManagerTeam() %> </font>成员</h2>
+    <br />
+    <br />
+    <br />
+    <%
         TeamLeaderDao teamLeaderDao = new TeamLeaderDaoImpl();
         List<Teacher> teachers =  teamLeaderDao.getTeamTeacher(teamLeader.getId());
+        int i=0;
         if(!teachers.isEmpty()){
-        	for(Teacher teacher : teachers){
-        		%>
-        		<font color='red' size='5'><a href="teamLeaderToTeacher.jsp?id=<%=teacher.getId()%>"><%=teacher.getTrueName() %></a></font>　　｜　
-        		<%
-        	}
+            for(Teacher teacher : teachers){
+                i=i+1;
+                if (i%3==0) {%>
+        <br />
+    <%} %>
+
+    <button class="button1"><a href="teamLeaderToTeacher.jsp?id=<%=teacher.getId()%>"><%=teacher.getTrueName() %></a></button>
+    <%--<button class="button1"><%=teacher.getTrueName()%></button>--%>
+    <%
+            }
         }
-      
-      %>
-    
-    
-      　　　    
-    
- </div>
- <%} %>
+    %>
+
+</div>
 </body>
 </html>

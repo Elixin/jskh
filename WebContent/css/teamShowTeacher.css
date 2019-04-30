@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a{text-decoration:none; display:block;
+	text-align: center; }
+body {
+	background: url(../images/timg.jpg) no-repeat;
+	background-size:contain|cover;
+	width:100%;
+	height: auto;
+}
+.center{
+	margin: 0px auto;
+	width: 1000px;
+	height: 760px;
+	background: white;
+	border-radius: 35px;
+	text-align: center;
+	margin-top: 80px;
+}
+table{
+	margin-left: 150px;
+	width:700px;
+	height: 400px;
+}
+
+table a{
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+
+button{
+	width: 300px;
+	height: 70px;
+	background: orange;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+.center button:active {
+	background: white;
+	border: 1px solid orange;
+	color: black;
+}

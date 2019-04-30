@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a{text-decoration:none; display:block;
+	text-align: center; }
+
+body {
+	background: url(../images/timg.jpg) no-repeat;
+	background-size:contain|cover;
+	width:100%;
+	height: auto;
+}
+
+.center {
+	width: 1000px;
+	height: 600px;
+	background: white;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	border-radius: 30px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.button1 {
+	width: 200px;
+	height: 80px;
+	background: orange;
+	color: white;
+	font-size: 25px;
+	margin: 0px 30px 20px 10px;
+	border: none;
+	position: relative;
+	left: 140px;
+	border-radius: 15px;
+	outline: none;
+}
+
+.button1:active {
+	background: white;
+	border: 1px solid orange;
+	color: black;
+}

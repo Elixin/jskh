@@ -24,11 +24,9 @@ public class RegCollegeLeaderServlet extends HttpServlet {
         super();
        
     }
-
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		System.out.println("3");
+		System.out.println("333");
 		String userName = request.getParameter("userName");
 		String trueName = request.getParameter("trueName");
 		String password = request.getParameter("password");
@@ -39,20 +37,26 @@ public class RegCollegeLeaderServlet extends HttpServlet {
 		//System.out.println(userName+","+trueName+","+team);
 		CollegeLeaderDao collegeLeaderDao=new CollegeLeaderDaoImpl();
 		CollegeLeader collegeLeader=new CollegeLeader();
-		TeamLeader teamLeader=new TeamLeader();
-		teamLeader.setUsername(userName);  //用户名
-		teamLeader.setTrueName(trueName);     //真实姓名
-		teamLeader.setPassword(password);  //密码
-		teamLeader.setDep(dep);  //二级学院名
-		teamLeader.setNote(note);  //备注
-		teamLeader.setPosition(level);  //职位
-		teamLeader.setTeamType(teamType); //团队类型
-
+		collegeLeader.setUsername(userName);  //用户名
+		collegeLeader.setTrueName(trueName);     //真实姓名
+		collegeLeader.setPassword(password);  //密码
+		collegeLeader.setDep(dep);  //二级学院名
+		collegeLeader.setNote(note);  //备注
+		collegeLeader.setPosition(level);  //职位
+		collegeLeader.setTeamType(teamType); //团队类型
+		System.out.println("用户名 "+userName);
+		System.out.println("密码 "+password);
+		System.out.println("姓名 "+trueName);
+		System.out.println("二级学院名 "+dep);
+		System.out.println("备注 "+note);
+		System.out.println("职位 "+level);
+		System.out.println("团队类型 "+teamType);
 		int i=collegeLeaderDao.addCollegeLeader(collegeLeader);
+		System.out.println(i);
 		if(i==-1) {
-			response.sendRedirect("teacherRegister.jsp?info=no");
+			response.sendRedirect("collegeLeaderRegister.jsp?info=no");
 		}else {
-		    response.sendRedirect("index_teacher.jsp");
+		    response.sendRedirect("index_collegeLeader.jsp");
 		}
 		
 	}
@@ -61,5 +65,4 @@ public class RegCollegeLeaderServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }

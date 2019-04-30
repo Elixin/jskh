@@ -33,7 +33,7 @@ public class RegTeamLeaderServlet extends HttpServlet {
 		String trueName = request.getParameter("trueName");
 		String password = request.getParameter("password");
 		String level = request.getParameter("level");
-		String team = request.getParameter("team");
+		String team = request.getParameter("managerTeam");
 		String note = request.getParameter("note");
 		String dep = request.getParameter("dep");
 		String teamType=request.getParameter("teamType");
@@ -42,7 +42,7 @@ public class RegTeamLeaderServlet extends HttpServlet {
 		TeamLeader teamLeader=new TeamLeader();
 		teamLeader.setUsername(userName);  //用户名
 		teamLeader.setTrueName(trueName);     //真实姓名
-		teamLeader.setTeamType(team);    //管理团队
+		teamLeader.setManagerTeam(team);    //管理团队
 		teamLeader.setPassword(password);  //密码
 		teamLeader.setDep(dep);  //二级学院名
 		teamLeader.setNote(note);  //备注
@@ -53,12 +53,11 @@ public class RegTeamLeaderServlet extends HttpServlet {
 		if(i==-1) {
 			response.sendRedirect("teacherRegister.jsp?info=no");
 		}else {
-		    response.sendRedirect("index_teacher.jsp");
+		    response.sendRedirect("index_teamLeader.jsp");
 		}
 		
 	}
 
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}

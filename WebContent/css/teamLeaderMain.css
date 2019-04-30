@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration:none; display:block;
+	text-align: center; }
+.index{
+	position: relative;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background:url(../images/timg.jpg) no-repeat;
+	background-size:contain|cover;
+	width:100%;
+	height: auto;
+}
+
+.center{
+	width: 100%;
+	height: 800px;
+	background: white;
+	position:absolute;
+	top: 10%;
+	opacity: 0.6;
+	animation: myone 4s  infinite linear;
+}
+.system{
+	width: 200px;
+	height: 50px;
+	background: white;
+	margin-top: 2.4%;
+	margin-left: 80px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 15px 15px 0 0;
+	font-size: 20px;
+	color: blue;
+	font-weight: 600;
+
+}
+.leave{
+	width: 200px;
+	height: 50px;
+	background: white;
+	margin-top: 2.4%;
+	margin-left: 100px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 15px 15px 0 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.important{
+	width: 650px;
+	height: 650px;
+	background: white;
+	position: absolute;
+	left: 33%;
+	top: 15%;
+	box-shadow:5px 5px 5px 5px lightgray;
+}
+.important span{
+	font-size: 30px;
+	margin-top: 100px;
+	display: block;
+	margin-left: 160px;
+	float: left;
+}
+.name{
+	margin-left: 260px;
+	float: left;
+	color:darkblue;
+	font-size: 35px;
+	margin-top: 30px;
+}
+.return {
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background: orange;
+	margin-left: 170px;
+	font-size: 20px;
+	margin-top: 50px;
+	/*text-align: center;*/
+	/*line-height: 50;*/
+}
+.return1 {
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background: orange;
+	margin-left: 170px;
+	font-size: 20px;
+	margin-top: 75px;
+}
+.return2{
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background: orange;
+	margin-left: 170px;
+	font-size: 20px;
+	margin-top: 40px;
+
+}
+
+.important .return:hover{
+	background: grey;
+}
+.important .return1:hover{
+	background: grey;
+}
+.important .return2:hover{
+	background: grey;
+}
+.time{
+	margin-left: 220px;
+	margin-top:30px;
+	color: gray;
+	font-size: 20px;
+}
+			

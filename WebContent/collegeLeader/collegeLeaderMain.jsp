@@ -41,7 +41,7 @@
      <%
 //       String teamType = collegeLeader.getTeamType().trim();
 //     if(teamType.equals("教学")){
-    	 out.println("<a href=teamTeacher.jsp>给院级团队成员考评</a>　　|　　");
+    	 out.println("<a href=teamLeader.jsp>给院级团队成员考评</a>　　|　　");
     	 out.println("<a href=teamShowTeacher.jsp>查看院级团队成员得分</a>　　|　　");
     	 out.println("<a href=teamAddTeacher.jsp>添加院级团队成员信息</a>");
 //      }else if(teamType.equals("行政")){

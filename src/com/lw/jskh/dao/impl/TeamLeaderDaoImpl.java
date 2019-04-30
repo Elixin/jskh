@@ -392,6 +392,8 @@ public class TeamLeaderDaoImpl extends BaseDao implements TeamLeaderDao {
 		}
 		return i;
 	}
+
+
 	//检查用户名是否可用，true可用，false不可用。
 	public boolean checkTeamLeaderUserName(String userName) {
 		String sql = "select * from tb_teamleader where username=?";
@@ -407,5 +409,82 @@ public class TeamLeaderDaoImpl extends BaseDao implements TeamLeaderDao {
 			e.printStackTrace();
 		}
 		return b ;
+	}
+	//按Id封装团队负责人信息
+	@Override
+	public TeamLeader getTeamLeaderById(int id) {
+		TeamLeader teamLeader=null;
+		try {
+			String sql = "select * from tb_teamleader where id=?";
+			Object[] params={id};
+			ResultSet rs=this.executeSQL(sql, params);
+			if(rs.next()){
+				//封装教师对象
+				teamLeader = new TeamLeader();
+				teamLeader.setId(rs.getInt("id"));
+				teamLeader.setUsername(rs.getString("userName"));
+				teamLeader.setTrueName(rs.getString("trueName"));
+				teamLeader.setPosition(rs.getString("position"));
+				teamLeader.setManagerTeam(rs.getString("managerTeam"));
+				teamLeader.setTeamType(rs.getString("teamType"));
+				teamLeader.setDep(rs.getString("dep"));
+				teamLeader.setNote(rs.getString("note"));
+				teamLeader.setOpen(rs.getInt("open"));
+				teamLeader.setPic(rs.getString("pic"));
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			this.closeResource();
+		}
+		return teamLeader;
+	}
+
+	@Override
+	public TKH queryTHK(int tid) {
+		TKH tkh = null;
+		try {
+			String sql = "select * from tb_teamleaderkh where teamleaderid=?";
+			Object[] params={tid};
+			ResultSet rs=this.executeSQL(sql, params);
+			if(rs.next()){
+				//封装团队负责人考核项对象
+				tkh = new TKH();
+				tkh.setId(rs.getInt("id"));
+				System.out.println(rs.getInt("teamleaderid")+"   测试");
+				TeamLeader teamLeader=getTeamLeaderById(rs.getInt("teamleaderid"));
+				System.out.println(teamLeader+"   测试1");
+				tkh.setTeamLeader(teamLeader);
+				tkh.setTeacherName(teamLeader.getTrueName());
+				int [][] noScore = new int[26][5];
+				for(int i=0 ; i<26 ;i++) {
+					noScore[i][0] = rs.getInt("no"+(i+1)+"_add");
+					noScore[i][1] = rs.getInt("no"+(i+1)+"_sub");
+					noScore[i][2] = rs.getInt("no"+(i+1)+"_myself");
+					noScore[i][3] = rs.getInt("no"+(i+1)+"_leader");
+					noScore[i][4] = rs.getInt("no"+(i+1)+"_result");
+				}
+				tkh.setNoScore(noScore);
+				String[][] noNote = new String[26][3];
+				for(int i=0 ; i<26 ;i++) {
+					noNote[i][0] = rs.getString("no"+(i+1)+"_myself_note");
+					noNote[i][1] = rs.getString("no"+(i+1)+"_leader_note");
+					noNote[i][2] = rs.getString("no"+(i+1)+"_result_note");
+				}
+				tkh.setNoNote(noNote);
+				tkh.setKhTime_myself(rs.getString("khTime_myself"));
+				tkh.setKhTime_leader(rs.getString("khTime_leader"));
+				tkh.setKhTime_result(rs.getString("khTime_result"));
+				tkh.setTotal_myself(rs.getInt("total_myself"));
+				tkh.setTotal_leader(rs.getInt("total_leader"));
+				tkh.setTotal_result(rs.getInt("total_result"));
+
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			this.closeResource();
+		}
+		return tkh;
 	}
 }
