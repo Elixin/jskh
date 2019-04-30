@@ -11,7 +11,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
     <title>教师考核系统</title>
-    <link type="text/css" rel="stylesheet" href="css/index_teacher.css" />
+        <link type="text/css" rel="stylesheet" href="css/index_teacher.css" />
     <style type="text/css">
         <!--
         -->

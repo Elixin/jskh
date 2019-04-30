@@ -12,8 +12,8 @@
 
     <meta charset="utf-8" />
     <title></title>
-    <link type="text/css" rel="stylesheet" href="css/index_teaLeader.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="css/index_teacher.css" />
+    </head>
 
 <body>
 
@@ -42,9 +42,7 @@
         <div class="logC">
             <input type="submit" value="登录" class="login">
         </div>
-            <a href="teamLeaderRegister.jsp" class="zc" >开始注册</a>
         </form>
-    </div>
     </div>
 </div>
 

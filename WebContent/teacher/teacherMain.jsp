@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/main.css" />
 <style type="text/css">
 <!--
 -->
@@ -30,19 +30,41 @@
              String str_today=simpleDateFormat.format(today);
              year = str_today.substring(0,4);
             //out.println("<br/><font color='red' size='3'>考评教师：" + teacher.getTrueName() + "</font>" );
-            out.println("<font color='red' size='3'>　　　登录时间：" + str_today + "</font>" );
-            out.println(" <a href='../teacherExit'>退出登录</a>");
-          
+
+
             %>
 
  <div align="center"   >
-<br/><br/><br/><img alt="标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px"><br/>
-<h1>我是教师：<font color='red' ><%=teacher.getTrueName() %></font> </h1><br/><br/><br/>
-     <a href="teacherMyself.jsp">开始自评</a>　　｜
-     　    <a href="teacherUpload.jsp">上传资料</a>　　｜　    
-     <a href="#">评价团队负责人</a>　　｜　    
-     <a href="teacherSet.jsp">设置个人信息</a>
- </div>
+     <div class="center">
+         <div class="photo" >
+             <%
+                if (teacher.getPic()==null){
+                    out.print("");
+                }else {
+                    out.print("<img src=\""+basePath +"upload/"+teacher.getPic()+"\" width=\"100px\">");
+                }
+
+             %>
+         </div>
+
+         <h1>教师：<font color='red' ><%=teacher.getTrueName()%></font></h1>
+         <button><a href="teacherMyself.jsp">开始自评</a></button>
+         <button><a href="teacherUpload.jsp">上传资料</a></button>
+         <button><a href="#">评价团队负责人</a></button>
+         <button><a href="teacherSet.jsp">设置个人信息</a></button>
+         <a class="leave" href='../teacherExit' >退出登录</a>　
+         <div class="time" >登录时间：2019-04-15</div>
+     </div>
  <%} %>
 </body>
 </html>
+
+
+
+<%--<br/><br/><br/><img alt="标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px"><br/>--%>
+<%--<h1>我是教师：<font color='red' ><%=teacher.getTrueName() %></font> </h1><br/><br/><br/>--%>
+<%--     <a href="teacherMyself.jsp">开始自评</a>　　｜--%>
+<%--     <a href="teacherUpload.jsp">上传资料</a>　　｜　--%>
+<%--     <a href="#">评价团队负责人</a>　　｜　--%>
+<%--     <a href="teacherSet.jsp">设置个人信息</a>--%>
+<%-- </div>--%>
