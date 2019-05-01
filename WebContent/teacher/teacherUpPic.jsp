@@ -28,7 +28,7 @@
              Date today=new Date();
              SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
              String str_today=simpleDateFormat.format(today);
-             year = str_today.substring(0,4);
+//             year = str_today.substring(0,4);
             %>
 
      <div class="center">
@@ -44,9 +44,9 @@
                  <h3>上传图片：</h3>
                  <input type="file" accept="image/*" name="upfile" size="40" /><input class="scb" type="submit" value="上传" />
              </div>
-             <div class="time">登录时间：<%= year%></div>
-             <input type="button" class="button" value="退出登录">
-             <input type="button" class="button" value="退回教师主页">
+             <div class="time">登录时间：<%= str_today%></div>
+             <a class="button" href="<%=path%>/teacherExit">退出登录</a>
+             <a class="button" href="teacherMain.jsp">退回教师主页</a>
          </form>
      </div>
  <%} %>

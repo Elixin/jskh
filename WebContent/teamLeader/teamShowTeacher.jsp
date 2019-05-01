@@ -53,8 +53,6 @@
             for (int i=0;i<teachers.size();i++){
                 teacherList.add(new Teacher1(teachers.get(i).getId(),teachers.get(i).getTrueName(),
                         teachers.get(i).getTeamScore(),teachers.get(i).getMyselftScore()));
-                System.out.println(teacherList.get(i).getMyselftScore1());
-                System.out.println();
             }
             teacherList1.addAll(Teacher1.sortCard(teacherList));
             for(int i=0 ; i< teacherList1.size() ; i++){

@@ -11,19 +11,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
 <link type="text/css" rel="stylesheet" href="<%=basePath%>css/teamaddteacher.css" />
-    <%--<link type="text/css" rel="stylesheet" href="../css/teamaddteacher.css"/>--%>
+<%--    <link type="text/css" rel="stylesheet" href="../css/teamAddTeacher.css"/>--%>
 
-    <script language="JavaScript" type="text/javascript">
-        function display(Jt,New) {
-               var jt = document.getElementById(Jt);
-               var newteacher = document.getElementById(New);
-               if (jt.style.display=="none"){
-                   jt.style.display="";
-                   newteacher.style.display="";
-               }
+
+    <script type="text/javascript">
+        function dis() {
+            var jt = document.getElementById('Jt');
+            var newteacher = document.getElementById('Newteacher');
+
+            if (jt.style.display=="inline"){
+                jt.style.display="none";
+                newteacher.style.display="none"
+            } else {
+                jt.style.display="inline";
+                newteacher.style.display="inline"
+
+            }
+
         }
     </script>
-
 </head>
 
 <body>
@@ -40,14 +46,14 @@
 <div class="important">
     <span><%=teamLeader.getPosition()%></span>
     <div class="name"><%=teamLeader.getTrueName() %></div>
-    <button class="return1" onclick="">为团队添加新成员</button>
+    <button class="return1" onclick="dis()">为团队添加新成员</button>
     <button class="return"><a href="teamLeaderMain.jsp">返回团队负责人主页</a></button>
     <div class="time">登陆时间：<%Date today=new Date();
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
         String str_today=simpleDateFormat.format(today);%><%=str_today%></div>
 </div>
-<img src="../images/jt.png" class="jt"/>
-<div class="Newteacher">
+<img src="../images/jt.png" class="jt" id="Jt"/>
+<div class="Newteacher" id="Newteacher">
     <%  String info = request.getParameter("info");
         if(info!=null && info.equals("ok")){
     %>
