@@ -1,0 +1,161 @@
+
+		* {
+				margin: 0;
+				padding: 0;
+			}
+		body{
+			background:url(../images/timg.jpg) no-repeat;
+			background-size:contain|cover;
+			width:100%;
+			height: auto;
+
+		}
+
+		.bigbox {
+			max-width: 500px;
+			margin:100px auto;
+			border: none;
+			border-radius: 5px;
+			font: 12px "microsoft yahei", Helvetica, Arial, sans-serif;
+			color: #D3D3D3;
+			background: white;
+			font-size: 15px;
+
+		}
+
+		.bigbox h1 {
+			padding: 8px 0px 30px 10px;
+			display: block;
+			border-bottom: 1px solid #E5E5E5;
+			color: black;
+			margin-top: 20px ;
+		}
+
+		.text1 {
+			margin-left: 3px;
+			color: black;
+			font-size: 15px;
+			display: block;
+			float: left;
+		}
+
+		.text2 {
+			margin-left: 3px;
+			color: black;
+			font-size: 15px;
+			color: red;
+			display: block;
+			float: left;
+			margin-left: 120px;
+			margin-top: 30px;
+		}
+
+		.bigbox label {
+			margin: 0px 0px 5px;
+			display: block;
+		}
+
+		.fillhead {
+			height: 100px;
+			width: 99px;
+			margin: 20px 20px 20px 20px;
+			border: none;
+			/*            background: url("img/Example.jpg");*/
+			overflow: hidden;
+			position: relative;
+		}
+
+		.fileInput {
+			height: 106px;
+			border: none;
+			font-size: 300px;
+			opacity: 0;
+			position: absolute;
+		}
+
+		.bigbox label>span {
+			width: 20%;
+			float: left;
+			text-align: right;
+			padding-right: 10px;
+			margin-top: 10px;
+			font-weight: bold;
+			color: black;
+			font-size: 15px;
+		}
+
+		.Main-sex {
+			padding-right: 13px;
+			padding-bottom: 13px;
+			line-height: 4px;
+		}
+
+		.Main-sex input[type=checkbox] {
+			margin-top: 6px;
+		}
+
+		.bigbox input[type="text"],
+		.bigbox input[type="email"],
+		.bigbox input[type="password"],
+		.bigbox textarea {
+			height: 25px;
+			width: 70%;
+			line-height: 15px;
+			padding: 5px 0px 5px 5px;
+			margin-bottom: 16px;
+			margin-right: 6px;
+			margin-top: 2px;
+			border: none;
+			border-radius: 2px;
+			outline: 0 none;
+			background: #e5e5e5;
+			color: #525252;
+		}
+
+		.zposition {
+			width: 100px;
+			height: 30px;
+			margin-top: 6px;
+			margin-left: 20px;
+		}
+		.team {
+			width: 100px;
+			height: 30px;
+			margin-top: 6px;
+			margin-left: 20px;
+		}
+		.dep {
+			width: 120px;
+			height: 30px;
+			margin-top: 6px;
+			margin-left: 20px;
+		}
+
+		.bigbox textarea {
+			height: 100px;
+			width: 70%;
+			padding: 5px 0px 0px 5px;
+		}
+
+		.bigbox .button {
+			width: 200px;
+			height: 50px;
+			padding: 8px 24px 8px 24px;
+			margin-bottom: 8px;
+			border: none;
+			border-radius: 4px;
+			color: white;
+			background: orange;
+			margin-left: 150px;
+			font-size: 20px;
+			outline: none;
+
+		}
+
+		.bigbox .button:active {
+			color: #333;
+			background-color: #EBEBEB;
+		}
+		h1{
+			text-align: center;
+		}

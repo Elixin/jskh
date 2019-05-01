@@ -53,7 +53,7 @@
          <button><a href="#">评价团队负责人</a></button>
          <button><a href="teacherSet.jsp">设置个人信息</a></button>
          <a class="leave" href='../teacherExit' >退出登录</a>　
-         <div class="time" >登录时间：2019-04-15</div>
+         <div class="time" >登录时间：<%=str_today%></div>
      </div>
  <%} %>
 </body>
