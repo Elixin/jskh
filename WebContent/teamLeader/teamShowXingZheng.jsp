@@ -46,12 +46,12 @@
             <th width="200px" align="center">自评得分</th>
         </tr>
         <%
-            XingZheng xingZheng = null;
+            XingZheng xingZheng = new XingZheng();
             for(int i=0 ; i< xingZhengs.size() ; i++){
                 xingZheng = xingZhengs.get(i);
         %>
         <tr>
-            <td align="center" height="30"><%=i %></td>
+            <td align="center" height="30"><%=i+1 %></td>
             <td align="center"><font color='red' size='5'><a href="teamLeaderToXingZheng.jsp?id=<%=xingZheng.getId()%>"><%=xingZheng.getTrueName() %></a></font></td>
             <td align="center"><%=xingZheng.getTeamScore() %></td>
             <td align="center"><%=xingZheng.getMyselftScore() %></td>

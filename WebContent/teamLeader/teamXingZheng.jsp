@@ -47,7 +47,7 @@
     <br />
     <%} %>
 
-    <button class="button1"><a href="teamLeaderToTeacher.jsp?id=<%=xingZheng.getId()%>"><%=xingZheng.getTrueName() %></a></button>
+    <button class="button1"><a href="teamLeaderToXingZheng.jsp?id=<%=xingZheng.getId()%>"><%=xingZheng.getTrueName() %></a></button>
     <%--<button class="button1"><%=teacher.getTrueName()%></button>--%>
     <%
             }
