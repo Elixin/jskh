@@ -6,13 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="786c648d-167a-41ff-a5cb-9be66d139fcc" name="Default Changelist" comment="杨秀林第五次提交，修改了团队负责人界面">
+    <list default="true" id="786c648d-167a-41ff-a5cb-9be66d139fcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/teamaddteacher.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/teamLeader/teamShowXingZheng.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teamLeader/teamShowXingZheng.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/teamLeader/teamXingZheng.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teamLeader/teamXingZheng.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目提交测试.patch" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -63,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamLeaderMain.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+            <state relative-caret-position="1113">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -72,8 +73,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamShowXingZheng.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="182">
+              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/index_teamLeader.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -101,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebContent/index_teamLeader1.jsp" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/AddTeacherServlet.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/Teacher1.java" />
@@ -123,7 +141,6 @@
         <option value="$PROJECT_DIR$/WebContent/css/index.css" />
         <option value="$PROJECT_DIR$/WebContent/index.jsp" />
         <option value="$PROJECT_DIR$/WebContent/collegeLeaderRegister.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/entity/CollegeLeader.java" />
         <option value="$PROJECT_DIR$/src/com/lw/jskh/action/RegCollegeLeaderServlet.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
@@ -148,10 +165,12 @@
         <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeLeaderDaoImpl.java" />
         <option value="$PROJECT_DIR$/jskh.sql" />
         <option value="$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp" />
         <option value="$PROJECT_DIR$/WebContent/css/teamAddTeacher.css" />
         <option value="$PROJECT_DIR$/WebContent/teamLeader/teamXingZheng.jsp" />
         <option value="$PROJECT_DIR$/WebContent/teamLeader/teamShowXingZheng.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/WebContent/index_teamLeader.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp" />
       </list>
     </option>
   </component>
@@ -187,40 +206,6 @@
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
               <item name="jskh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="jskh_Web_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="jskh_Web_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="jskh_Web_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
@@ -267,12 +252,6 @@
               <item name="jskh" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jskh" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jskh" type="b2602c69:ProjectViewProjectNode" />
@@ -435,6 +414,9 @@
       <workItem from="1556423218448" duration="15852000" />
       <workItem from="1556499398272" duration="11649000" />
       <workItem from="1556585081360" duration="8931000" />
+      <workItem from="1556694860834" duration="1004000" />
+      <workItem from="1556696225141" duration="146000" />
+      <workItem from="1556696880578" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交测试">
       <created>1555304368164</created>
@@ -475,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112753000" />
+    <option name="totallyTimeSpent" value="114516000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -487,10 +469,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88" visible="true" weight="0.24130106" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88" visible="true" weight="0.2934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -500,7 +481,7 @@
       <window_info id="Web" order="7" sideWeight="0.11764706" side_tool="true" weight="0.36481243" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49848714" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49546143" visible="true" weight="0.083076924" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49092284" visible="true" weight="0.083076924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993644" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -510,11 +491,11 @@
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.5529661" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.39636913" side_tool="true" weight="0.3276923" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.50907713" side_tool="true" visible="true" weight="0.083076924" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3276923" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.32944915" />
-      <window_info anchor="bottom" id="Version Control" order="16" sideWeight="0.60363084" weight="0.3276923" />
+      <window_info anchor="bottom" id="Version Control" order="16" sideWeight="0.5960666" weight="0.06" />
       <window_info anchor="bottom" id="Thumbnails" order="17" weight="0.32944915" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -609,7 +590,8 @@
     <MESSAGE value="杨秀林第四次提交，增加了院长登录界面" />
     <MESSAGE value="杨秀林第一次提交，增加了院长登录界面" />
     <MESSAGE value="杨秀林第五次提交，修改了团队负责人界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="杨秀林第五次提交，修改了团队负责人界面" />
+    <MESSAGE value="杨秀林第六次提交，修改了团队负责人界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="杨秀林第六次提交，修改了团队负责人界面" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -617,13 +599,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/action/TeamLeaderLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/collegeLeader/collegeLeaderMain.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -847,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/impl/CollegeLeaderDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -867,7 +835,7 @@
     <entry file="file://$PROJECT_DIR$/WebContent/css/index_teaLeader.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/teamAddTeacher.css">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/jskh_Web_exploded/css/teamaddteacher.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/images/timg.jpg">
@@ -884,13 +852,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -915,17 +876,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/css/teamAddTeacher.css">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/teamaddteacher.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lw/jskh/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="76" column="74" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+        <state relative-caret-position="294">
+          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -936,17 +897,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddXingZheng.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamLeaderMain.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+        <state relative-caret-position="1113">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index_teamLeader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamAddTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/teamLeader/teamShowXingZheng.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="182">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
         </state>
       </provider>
     </entry>

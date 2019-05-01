@@ -12,8 +12,8 @@
 
     <meta charset="utf-8" />
     <title></title>
-    <link type="text/css" rel="stylesheet" href="css/index_teacher.css" />
-    </head>
+    <link type="text/css" rel="stylesheet" href="css/index_teaLeader.css">
+</head>
 
 <body>
 
@@ -33,17 +33,19 @@
             %>
         </div>
         <form action="<%=basePath%>teamleaderLogin" method="post">
-        <div class="lgD">
-            <input type="text" placeholder="输入用户名" id="username" name="username" required/>
-        </div>
-        <div class="lgD">
-            <input type="password" placeholder="输入用户密码" id="password" name="password" required/>
-        </div>
-        <div class="logC">
-            <input type="submit" value="登录" class="login">
-        </div>
+            <div class="lgD">
+                <input type="text" placeholder="输入用户名" id="username" name="username" required/>
+            </div>
+            <div class="lgD">
+                <input type="password" placeholder="输入用户密码" id="password" name="password" required/>
+            </div>
+            <div class="logC">
+                <input type="submit" value="登录" class="login">
+            </div>
+            <a href="teamLeaderRegister.jsp" class="zc" >开始注册</a>
         </form>
     </div>
+</div>
 </div>
 
 </body>
