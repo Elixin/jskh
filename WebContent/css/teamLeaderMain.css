@@ -3,7 +3,8 @@
 	padding: 0;
 }
 a{text-decoration:none; display:block;
-	text-align: center; }
+	text-align: center;
+     color: white}
 .index{
 	position: relative;
 }
@@ -41,6 +42,9 @@ body{
 	color: blue;
 	font-weight: 600;
 
+}
+.system a{
+	color: blue;
 }
 .leave{
 	width: 200px;
@@ -130,5 +134,8 @@ body{
 	margin-top:30px;
 	color: gray;
 	font-size: 20px;
+}
+.time font{
+	color: gray;
 }
 			

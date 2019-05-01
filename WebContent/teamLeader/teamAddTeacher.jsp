@@ -10,8 +10,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<%--<link type="text/css" rel="stylesheet" href="<%=basePath%>css/teamaddteacher.css" />--%>
-    <link type="text/css" rel="stylesheet" href="../css/teamAddTeacher.css"/>
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/teamaddteacher.css" />
+    <%--<link type="text/css" rel="stylesheet" href="../css/teamaddteacher.css"/>--%>
+
     <script language="JavaScript" type="text/javascript">
         function display(Jt,New) {
                var jt = document.getElementById(Jt);

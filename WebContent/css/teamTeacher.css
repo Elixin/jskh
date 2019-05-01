@@ -4,7 +4,8 @@
 }
 
 a{text-decoration:none; display:block;
-	text-align: center; }
+	text-align: center;
+	color: white;}
 
 body {
 	background: url(../images/timg.jpg) no-repeat;
@@ -15,7 +16,7 @@ body {
 
 .center {
 	width: 1000px;
-	height: 600px;
+	/*height: 600px;*/
 	background: white;
 	position: absolute;
 	top: 20%;
@@ -45,8 +46,11 @@ h2 {
 	outline: none;
 }
 
-.button1:active {
-	background: white;
-	border: 1px solid orange;
-	color: black;
+/*.button1:active {*/
+	/*background: white;*/
+	/*border: 1px solid orange;*/
+	/*color: black;*/
+/*}*/
+a:active{
+    color: black;
 }

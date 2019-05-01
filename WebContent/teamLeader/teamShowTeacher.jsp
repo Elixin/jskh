@@ -10,8 +10,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
-    <link type="text/css" rel="stylesheet" href="../css/teamShowTeacher.css">
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/teamShowTeacher.css" />
+    <%--<link type="text/css" rel="stylesheet" href="../css/teamShowTeacher.css">--%>
 <style type="text/css">
 <!--
 -->
@@ -26,7 +26,7 @@
             response.sendRedirect("../index.jsp");
           }else{
             %>
-<div align="center"  >
+<div class="center" >
 <br><br>
     <br><br>
     <h1><font color='black' ><%=teamLeader.getManagerTeam() %>负责人</font>:<font color='blue' ><%=teamLeader.getTrueName() %></font></h1><br/><br/>

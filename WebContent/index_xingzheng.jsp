@@ -11,7 +11,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
     <title>教师考核系统</title>
-        <link type="text/css" rel="stylesheet" href="css/index_teacher.css" />
+        <%--<link type="text/css" rel="stylesheet" href="css/index_teacher.css" />--%>
+    <link type="text/css" rel="stylesheet" href="<%=basePath%>css/index_teacher.css" />
     <style type="text/css">
         <!--
         -->
@@ -34,7 +35,7 @@
         <div class="logD logDtip">
             <p class="p1">行政人员登录</p>
         </div>
-        <form action="teacherLogin" method="post">
+        <form action="xingzhengLogin" method="post">
             <div class="lgD">
                 <input type="text" name="username" id="username"  required placeholder="输入用户名"/>
             </div>
