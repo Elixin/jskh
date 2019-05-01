@@ -13,7 +13,8 @@ import com.lw.jskh.dao.impl.TeacherDaoImpl;
 import com.lw.jskh.entity.Teacher;
 
 /***
- * 设置获取
+ * 教师信息更新
+ *
  */
 
 
@@ -30,7 +31,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		System.out.println("14");
+
 		int id = Integer.parseInt(request.getParameter("id"));
 		String username = request.getParameter("username");
 		String trueName = request.getParameter("trueName");
@@ -46,7 +47,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 //		判断是否拥有密码
 		if(password==null || password.equals("")) {
 			 teacher.setId(id);
-			 teacher.setUsername(username);
+//			 teacher.setUsername(username);
 			 teacher.setTrueName(trueName);
 			 teacher.setLevel(level);
 			 teacher.setTeam(team);
@@ -56,7 +57,7 @@ public class UpdateTeacherServlet extends HttpServlet {
 			System.out.println(teacher.getId()+teacher.getUsername());
 		}else {
 		     teacher.setId(id);
-			 teacher.setUsername(username);
+//			 teacher.setUsername(username);
 			 teacher.setPassword(password);
 			 teacher.setTrueName(trueName);
 			 teacher.setLevel(level);

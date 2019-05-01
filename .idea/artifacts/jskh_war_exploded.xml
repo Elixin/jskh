@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jskh:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/jskh_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jskh" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="commons-fileupload-1.2.2.jar" module-name="jskh" />
+          <element id="library" level="module" name="commons-io-2.0.1.jar" module-name="jskh" />
+          <element id="library" level="module" name="commons-lang3-3.1.jar" module-name="jskh" />
+          <element id="library" level="module" name="mysql-connector-java-5.1.21-bin.jar" module-name="jskh" />
+          <element id="library" level="module" name="junit4" module-name="jskh" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="jskh/web/Web" />
+    </root>
+  </artifact>
+</component>

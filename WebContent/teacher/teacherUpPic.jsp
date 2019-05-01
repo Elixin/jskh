@@ -10,22 +10,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/pic.css" />
 <style type="text/css">
 <!--
 -->
 </style>
-<%--    <script type="application/javascript">--%>
-<%--        function image(target) {--%>
-<%--            var name=target.value;--%>
-<%--            var fileName = name.substring(name.lastIndexOf(".")+1).toLowerCase();--%>
-<%--            if(fileName !="jpg" && fileName !="jpeg" && fileName !="png" && fileName !="gif"){--%>
-<%--                alert("请选择图片格式文件上传(jpg,png,gif,gif等)！");--%>
-<%--                target.value="";--%>
-<%--                return false;   //阻止submit提交--%>
-<%--            }--%>
-<%--        }--%>
-<%--    </script>--%>
 </head>
 
 <body>
@@ -40,27 +29,47 @@
              SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
              String str_today=simpleDateFormat.format(today);
              year = str_today.substring(0,4);
-            out.println("<br/><font color='red' size='3'>被考评教师：" + teacher.getTrueName() + "</font>" );
-            out.println("<font color='red' size='3'>　　　登录时间：" + str_today + "</font>" );
-            out.println(" <a href='../teacherExit'>退出登录</a>");
-          
             %>
 
- <div align="center"   >
- <h1>上传个人标准照</h1><br/>
-<br/><br/><br/>
- <form action="teacherUpPic?id=<%=teacher.getId() %>" method="post" enctype="multipart/form-data" >
+     <div class="center">
+         <form action="teacherUpPic?id=<%=teacher.getId() %>" method="post" enctype="multipart/form-data">
+             <br />
+             <h1>上传个人标准照</h1>
+             <h2>被评教师：<font>段萍</font></h2>
+             <div class="photo">
+                 <h3>个人标准照:</h3>
+                 <img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="200px">
+             </div>
+             <div class="sc">
+                 <h3>上传图片：</h3>
+                 <input type="file" accept="image/*" name="upfile" size="40" /><input class="scb" type="submit" value="上传" />
+             </div>
+             <div class="time">登录时间：<%= year%></div>
+             <input type="button" class="button" value="退出登录">
+             <input type="button" class="button" value="退回教师主页">
+         </form>
+     </div>
+ <%} %>
+</body>
+</html>
+
+
+<%--
+
+
+<form action="teacherUpPic?id=<%=teacher.getId() %>" method="post" enctype="multipart/form-data" >
     <table border="1">
       <tr>
        <th>个人标准照:</th><td><img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px"></td>
-     </tr>     
+     </tr>
       <tr>
-        <td>上传图片：</td><td><input type="file" accept="image/*" name="upfile" size="40" onchange="image(this)" /><input type="submit" value="上传"  /></td>
+        <td>上传图片：</td><td><input type="file" accept="image/*" name="upfile" size="40"  /><input type="submit" value="上传"  /></td>
       </tr>
       </table>
    </form><br>
   <a href="teacherMain.jsp">返回教师主页</a>
  </div>
- <%} %>
-</body>
-</html>
+
+
+
+--%>
