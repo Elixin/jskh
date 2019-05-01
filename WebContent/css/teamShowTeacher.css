@@ -4,7 +4,8 @@
 }
 
 a{text-decoration:none; display:block;
-	text-align: center; }
+	text-align: center;
+color: blue;}
 body {
 	background: url(../images/timg.jpg) no-repeat;
 	background-size:contain|cover;
@@ -14,7 +15,7 @@ body {
 .center{
 	margin: 0px auto;
 	width: 1000px;
-	height: 760px;
+	/*height: 760px;*/
 	background: white;
 	border-radius: 35px;
 	text-align: center;
@@ -46,4 +47,7 @@ button{
 	background: white;
 	border: 1px solid orange;
 	color: black;
+}
+a:active{
+	color: red;
 }

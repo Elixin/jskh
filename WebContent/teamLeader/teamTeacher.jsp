@@ -10,7 +10,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-    <link type="text/css" rel="stylesheet" href="../css/teamTeacher.css">
+    <%--<link type="text/css" rel="stylesheet" href="../css/teamTeacher.css">--%>
+    <link type="text/css" rel="stylesheet" href="<%=basePath%>css/teamTeacher.css" />
 <style type="text/css">
 <!--
 -->
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-<div align="center">
+<div class="center" >
     <br><br>
     <%
         TeamLeader teamLeader = (TeamLeader)session.getAttribute("teamLeader");
@@ -42,15 +43,14 @@
         int i=0;
         if(!teachers.isEmpty()){
             for(Teacher teacher : teachers){
-                i=i+1;
+
                 if (i%3==0) {%>
         <br />
     <%} %>
 
     <button class="button1"><a href="teamLeaderToTeacher.jsp?id=<%=teacher.getId()%>"><%=teacher.getTrueName() %></a></button>
-    <%--<button class="button1"><%=teacher.getTrueName()%></button>--%>
     <%
-            }
+                i=i+1;  }
         }
     %>
 

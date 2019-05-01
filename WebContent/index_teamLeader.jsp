@@ -12,7 +12,8 @@
 
     <meta charset="utf-8" />
     <title></title>
-    <link type="text/css" rel="stylesheet" href="css/index_teaLeader.css">
+    <%--<link type="text/css" rel="stylesheet" href="css/index_teaLeader.css">--%>
+    <link type="text/css" rel="stylesheet" href="<%=basePath%>css/index_teaLeader.css" />
 </head>
 
 <body>
