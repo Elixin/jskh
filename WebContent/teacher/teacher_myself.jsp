@@ -168,6 +168,7 @@ function disfour() {
 
      <form action="<%=basePath%>teacher/teacherKh" method="post" name="tkhbForm">
 
+
          <h1><%=teacher.getDep()%>专任教师工作量化考核表（<input type="text" name="year" value="<%=year%>" size="8"/>年）</h1><br/> 　被考评教师：
          <font color='red' size='3'><%=teacher.getTrueName()%></font>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 日期：
          <font color='red' size='3'><%=str_today%></font>
@@ -328,7 +329,7 @@ function disfour() {
                      </td>
                  </tr>
              </table>
-             <input type="hidden" name="id" value="22" />
+             <input type="hidden" name="id" value="<%=teacher.getId() %>" />
              <p><input class="tj" type="submit" value="提交" />　　　<input class="qx" type="reset" value="取消" />
          </div>
      </form>

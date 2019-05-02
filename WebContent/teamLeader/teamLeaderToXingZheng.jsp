@@ -10,11 +10,251 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/xingzheng_myself.css" />
 <style type="text/css">
 <!--
 -->
 </style>
+
+    <script type="text/javascript">
+
+        window.onload=function (){
+
+            var totalScore=0;
+        }
+        function add(){
+            var scores = document.getElementsByName("xingZhengMyself");
+            //alert(scores.length);
+            var totalScore=0;
+            for(var i=0;i<scores.length;i++){
+                var s=scores[i];
+                //alert(Number(s.value));
+                totalScore += Number(s.value);
+            }
+            //alert(totalScore);
+            var ts=document.getElementById("totalScore");
+            ts.innerHTML = totalScore+"分";
+
+        }
+
+        function disone() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+            one.style.display="initial";
+            two.style.display="none";
+            three.style.display="none";
+            four.style.display="none";
+            five.style.display="none";
+            sex.style.display="none";
+
+
+            ones.style.background="#ffa500";
+            twos.style.background="#fff";
+            threes.style.background="#fff";
+            fours.style.background="#fff";
+            fives.style.background="#fff";
+            sexs.style.background="#fff";
+
+        }
+
+        function distwo() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            one.style.display="none";
+            two.style.display="initial";
+            three.style.display="none";
+            four.style.display="none";
+            five.style.display="none";
+            sex.style.display="none";
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+            ones.style.background="#fff";
+            twos.style.background="#ffa500";
+            threes.style.background="#fff";
+            fours.style.background="#fff";
+            fives.style.background="#fff";
+            sexs.style.background="#fff";
+
+        }
+
+        function disthree() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            one.style.display="none";
+            two.style.display="none";
+            three.style.display="initial";
+            four.style.display="none";
+            five.style.display="none";
+            sex.style.display="none";
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+
+
+            ones.style.background="#fff";
+            twos.style.background="#fff";
+            threes.style.background="#ffa500";
+            fours.style.background="#fff";
+            fives.style.background="#fff";
+            sexs.style.background="#fff";
+
+        }
+
+        function disfour() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            one.style.display="none";
+            two.style.display="none";
+            three.style.display="none";
+            four.style.display="initial";
+            five.style.display="none";
+            sex.style.display="none";
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+
+            ones.style.background="#fff";
+            twos.style.background="#fff";
+            threes.style.background="#fff";
+            fours.style.background="#ffa500";
+            fives.style.background="#fff";
+            sexs.style.background="#fff";
+
+        }
+
+        function disfive() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            one.style.display="none";
+            two.style.display="none";
+            three.style.display="none";
+            four.style.display="none";
+            five.style.display="initial";
+            sex.style.display="none";
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+
+
+            ones.style.background="#fff";
+            twos.style.background="#fff";
+            threes.style.background="#fff";
+            fours.style.background="#fff";
+            fives.style.background="#ffa500";
+            sexs.style.background="#fff";
+
+        }
+
+        function dissex() {
+
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            var three = document.getElementById("three");
+            var four = document.getElementById("four");
+            var five = document.getElementById("five");
+            var sex = document.getElementById("sex");
+
+
+            one.style.display="none";
+            two.style.display="none";
+            three.style.display="none";
+            four.style.display="none";
+            five.style.display="none";
+            sex.style.display="initial";
+
+
+            var ones = document.getElementById("ones");
+            var twos = document.getElementById("twos");
+            var threes = document.getElementById("threes");
+            var fours = document.getElementById("fours");
+            var fives = document.getElementById("fives");
+            var sexs = document.getElementById("sexs");
+
+
+
+
+            ones.style.background="#fff";
+            twos.style.background="#fff";
+            threes.style.background="#fff";
+            fours.style.background="#fff";
+            fives.style.background="#fff";
+            sexs.style.background="#ffa500";
+
+        }
+
+    </script>
 </head>
 
 <body>
@@ -39,9 +279,13 @@
       System.out.println(id);
       XingZheng xingZheng = xingZhengDao.getXingZheng(id); 
       System.out.println(xingZheng.getId());
-      out.println(" <a href='../teamLeaderExit'>退出登录</a>　　　　　　");
-      out.println(" <a href='teamLeaderMain.jsp'>团队负责人主页</a>");
+//      out.println(" <a href='../teamLeaderExit'>退出登录</a>　　　　　　");
+//      out.println(" <a href='teamLeaderMain.jsp'>团队负责人主页</a>");
             %>
+
+ <a class="leave" href='../teacherExit'>退出登录</a>
+
+ <a class="leaveimp" href='teamLeaderMain.jsp'>退回团队负责人主页</a>
 <div align="center"   >
 <br/><br/><br/>
 
@@ -57,7 +301,7 @@
      　 日期：<font color='red' size='3'><%=str_today %> </font>　　　　
      <font color='red' size='5'><a href="xingzheng_team.jsp?id=<%=id%>">团队负责人打分</a></font>　　　　
      <font color='red' size='5'><a href="teamXingZheng.jsp">继续给团队其它人员打分</a></font>
-    <table border="1" >
+    <table border="1" class="one" id="one" >
       <thead>
       
       </thead>
@@ -112,6 +356,22 @@
         <td align="left"></td>   
          <%} %>
       </tr>
+    </table>
+
+    <table border="1" class="two" id="two" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th>基础分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="50px" align="center">自评得分</th>
+            <th  width="150px" align="center">自评备注</th>
+            <th  width="50px" align="center">团队打分</th>
+            <th  width="150px" align="center">团队打分备注</th>
+        </tr>
       <!--考核项二-->
        <tr>
         <td rowspan="4" width="30px" align="center">二</td>
@@ -168,6 +428,22 @@
         <td align="left"></td> 
          <%} %>
       </tr>
+    </table>
+
+    <table border="1" class="three" id="three" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th>基础分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="50px" align="center">自评得分</th>
+            <th  width="150px" align="center">自评备注</th>
+            <th  width="50px" align="center">团队打分</th>
+            <th  width="150px" align="center">团队打分备注</th>
+        </tr>
        <!--考核项三-->
       <tr>
         <td rowspan="3" width="30px" align="center">三</td>
@@ -209,6 +485,22 @@
         <td align="left"></td> 
          <%} %>
       </tr>
+    </table>
+
+    <table border="1" class="four" id="four" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th>基础分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="50px" align="center">自评得分</th>
+            <th  width="150px" align="center">自评备注</th>
+            <th  width="50px" align="center">团队打分</th>
+            <th  width="150px" align="center">团队打分备注</th>
+        </tr>
        <!--考核项四-->
       <tr>
         <td rowspan="3" width="30px" align="center">四</td>
@@ -250,6 +542,22 @@
         <td align="left"></td> 
          <%} %>
       </tr>
+    </table>
+
+    <table border="1" class="five" id="five" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th>基础分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="50px" align="center">自评得分</th>
+            <th  width="150px" align="center">自评备注</th>
+            <th  width="50px" align="center">团队打分</th>
+            <th  width="150px" align="center">团队打分备注</th>
+        </tr>
        <!--考核项五-->
       <tr>
         <td rowspan="1" width="30px" align="center">五</td>
@@ -269,6 +577,22 @@
         <td align="left"></td> 
          <%} %> 
       </tr>
+    </table>
+
+        <table border="1" class="sex" id="sex">
+            <thead>
+
+            </thead>
+            <!--表头-->
+            <tr>
+                <th colspan="2">考核项</th>
+                <th>基础分值</th>
+                <th colspan="2">等　 级　说　明</th>
+                <th  width="50px" align="center">自评得分</th>
+                <th  width="150px" align="center">自评备注</th>
+                <th  width="50px" align="center">团队打分</th>
+                <th  width="150px" align="center">团队打分备注</th>
+            </tr>
        <!--考核项六-->
       <tr>
         <td rowspan="14" width="30px" align="center">六</td>
@@ -520,8 +844,15 @@
         <td colspan="3" align="center"><font color='red' size='3'>分</font> </td>
          <%} %>
       </tr>
-    </table> 
-    
+    </table>
+        <div class="page">
+            <a href="#" onclick="disone()" id="ones">1</a>
+            <a href="#" onclick="distwo()" id="twos">2</a>
+            <a href="#" onclick="disthree()" id="threes">3</a>
+            <a href="#" onclick="disfour()" id="fours">4</a>
+            <a href="#" onclick="disfive()" id="fives">5</a>
+            <a href="#" onclick="dissex()" id="sexs">6</a>
+        </div>
  </div>
  <%} %>      
 </body>

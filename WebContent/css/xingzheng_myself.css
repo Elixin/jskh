@@ -1,6 +1,3 @@
-a{
-    text-decoration: none;
-}
 .one{
     display: inline;
 }
@@ -13,7 +10,16 @@ a{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
 .four{
+    display: none;
+}
+.five{
+    display: none;
+}
+.sex{
     display: none;
 }
 
@@ -38,6 +44,13 @@ a{
 }#threes{
     background: #fff;
 }#fours{
+    background: #fff;
+}
+#fives{
+     background: #fff;
+ }
+
+#sexs{
     background: #fff;
 }
 

@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/xingzheng_myself.css" />
 <style type="text/css">
 <!--
 -->
@@ -36,6 +36,225 @@ window.onload=function (){
     	
      }
 
+
+function disone() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+    one.style.display="initial";
+    two.style.display="none";
+    three.style.display="none";
+    four.style.display="none";
+    five.style.display="none";
+    sex.style.display="none";
+
+
+    ones.style.background="#ffa500";
+    twos.style.background="#fff";
+    threes.style.background="#fff";
+    fours.style.background="#fff";
+    fives.style.background="#fff";
+    sexs.style.background="#fff";
+
+}
+
+function distwo() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    one.style.display="none";
+    two.style.display="initial";
+    three.style.display="none";
+    four.style.display="none";
+    five.style.display="none";
+    sex.style.display="none";
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+    ones.style.background="#fff";
+    twos.style.background="#ffa500";
+    threes.style.background="#fff";
+    fours.style.background="#fff";
+    fives.style.background="#fff";
+    sexs.style.background="#fff";
+
+}
+
+function disthree() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    one.style.display="none";
+    two.style.display="none";
+    three.style.display="initial";
+    four.style.display="none";
+    five.style.display="none";
+    sex.style.display="none";
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+
+
+    ones.style.background="#fff";
+    twos.style.background="#fff";
+    threes.style.background="#ffa500";
+    fours.style.background="#fff";
+    fives.style.background="#fff";
+    sexs.style.background="#fff";
+
+}
+
+function disfour() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    one.style.display="none";
+    two.style.display="none";
+    three.style.display="none";
+    four.style.display="initial";
+    five.style.display="none";
+    sex.style.display="none";
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+
+    ones.style.background="#fff";
+    twos.style.background="#fff";
+    threes.style.background="#fff";
+    fours.style.background="#ffa500";
+    fives.style.background="#fff";
+    sexs.style.background="#fff";
+
+}
+
+function disfive() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    one.style.display="none";
+    two.style.display="none";
+    three.style.display="none";
+    four.style.display="none";
+    five.style.display="initial";
+    sex.style.display="none";
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+
+
+    ones.style.background="#fff";
+    twos.style.background="#fff";
+    threes.style.background="#fff";
+    fours.style.background="#fff";
+    fives.style.background="#ffa500";
+    sexs.style.background="#fff";
+
+}
+
+function dissex() {
+
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+    var five = document.getElementById("five");
+    var sex = document.getElementById("sex");
+
+
+    one.style.display="none";
+    two.style.display="none";
+    three.style.display="none";
+    four.style.display="none";
+    five.style.display="none";
+    sex.style.display="initial";
+
+
+    var ones = document.getElementById("ones");
+    var twos = document.getElementById("twos");
+    var threes = document.getElementById("threes");
+    var fours = document.getElementById("fours");
+    var fives = document.getElementById("fives");
+    var sexs = document.getElementById("sexs");
+
+
+
+
+    ones.style.background="#fff";
+    twos.style.background="#fff";
+    threes.style.background="#fff";
+    fours.style.background="#fff";
+    fives.style.background="#fff";
+    sexs.style.background="#ffa500";
+
+}
+
+
 </script>
 </head>
 
@@ -55,14 +274,16 @@ window.onload=function (){
        }else{
   	    year = Integer.parseInt(str_today.substring(0,4));
         }
-       out.println("<br/><font color='red' size='3'>考评行政：" + xingZheng.getTrueName() + "</font>" );
+//       out.println("<br/><font color='red' size='3'>考评行政：" + xingZheng.getTrueName() + "</font>" );
    //out.println("<font color='red' size='3'>　　　登录时间：" + str_today + "</font>" );
-       out.println(" 　　　<a href='../xingZhengExit'>退出登录</a>");
-       out.println("　　　　　　");
-       out.println(" <a href='xingzhengMain.jsp'>退回行政人员主页</a>");
+//       out.println(" 　　　<a href='../xingZhengExit'>退出登录</a>");
+//       out.println("　　　　　　");
+//       out.println(" <a href='xingzhengMain.jsp'>退回行政人员主页</a>");
 
           
             %>
+ <a href='../xingZhengExit' class="leave">退出登录</a>
+ <a href='xingzhengMain.jsp' class="leaveimp" >退回行政人员主页</a>
 <div align="center"   >
 <br/><br/><br/>
 
@@ -77,7 +298,7 @@ window.onload=function (){
 <h1>信息工程学院专任教师工作量化考核表（<input type="text" name="year" value="<%=year%>" size="8"/>年）</h1><br/>
     　被考评教师：<font color='red' size='3'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
      　 日期：<font color='red' size='3'><%=str_today %> </font>
-         <table border="1" >
+         <table class="one" id="one" border="1" >
       <thead>
       
       </thead>
@@ -124,6 +345,20 @@ window.onload=function (){
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+         </table>
+
+    <table class="two" id="two" border="1" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th >基础　分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="100px" align="center">得分</th>
+            <th  width="150px" align="center">备注</th>
+        </tr>
       <!--考核项二-->
        <tr>
         <td rowspan="4" width="30px" align="center">二</td>
@@ -172,6 +407,20 @@ window.onload=function (){
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+    </table>
+
+    <table class="three" id="three" border="1" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th >基础　分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="100px" align="center">得分</th>
+            <th  width="150px" align="center">备注</th>
+        </tr>
        <!--考核项三-->
       <tr>
         <td rowspan="3" width="30px" align="center">三</td>
@@ -207,6 +456,20 @@ window.onload=function (){
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+    </table>
+
+    <table class="four" id="four" border="1" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th >基础　分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="100px" align="center">得分</th>
+            <th  width="150px" align="center">备注</th>
+        </tr>
        <!--考核项四-->
       <tr>
         <td rowspan="3" width="30px" align="center">四</td>
@@ -242,6 +505,20 @@ window.onload=function (){
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+    </table>
+
+    <table class="five" id="five" border="1" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th >基础　分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="100px" align="center">得分</th>
+            <th  width="150px" align="center">备注</th>
+        </tr>
        <!--考核项五-->
       <tr>
         <td rowspan="1" width="30px" align="center">五</td>
@@ -259,6 +536,21 @@ window.onload=function (){
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+    </table>
+
+    <div class="sex" id="sex">
+    <table  border="1" >
+        <thead>
+
+        </thead>
+        <!--表头-->
+        <tr>
+            <th colspan="2">考核项</th>
+            <th >基础　分值</th>
+            <th colspan="2">等　 级　说　明</th>
+            <th  width="100px" align="center">得分</th>
+            <th  width="150px" align="center">备注</th>
+        </tr>
        <!--考核项六-->
       <tr>
         <td rowspan="14" width="30px" align="center">六</td>
@@ -481,8 +773,17 @@ window.onload=function (){
       </tr>
     </table> 
            <input type="hidden" name="id"  value="<%=xingZheng.getId() %>" />
-         	<p><input type="submit" value="提交" />　　　<input type="reset" value="取消" />
+         	<p><input type="submit" class="tj" value="提交" />　　　<input type="reset" class="qx" value="取消" />
         </form>
+</div>
+    <div class="page">
+        <a href="#" onclick="disone()" id="ones">1</a>
+        <a href="#" onclick="distwo()" id="twos">2</a>
+        <a href="#" onclick="disthree()" id="threes">3</a>
+        <a href="#" onclick="disfour()" id="fours">4</a>
+        <a href="#" onclick="disfive()" id="fives">5</a>
+        <a href="#" onclick="dissex()" id="sexs">6</a>
+    </div>
  </div> 
  <%} %>     
 </body>

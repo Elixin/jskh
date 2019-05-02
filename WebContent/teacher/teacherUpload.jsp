@@ -106,7 +106,11 @@ if(teacher==null){
          }
        
        %>
+
      <div class="center">
+         <a class="leave" href='../teacherExit'>退出登录</a>
+
+         <a class="leaveimp" href='teacherMain.jsp'>退回教师主页</a>
          <br />
          <h1>上传佐证材料</h1>
          <h2>被评教师：<font><%=teacher.getTrueName()%></font></h2>

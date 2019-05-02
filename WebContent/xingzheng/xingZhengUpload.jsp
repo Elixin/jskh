@@ -1,343 +1,150 @@
 <%@ page language="java" import="java.util.Date,java.text.SimpleDateFormat" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <%@ page import="java.util.*,com.lw.jskh.entity.*,com.lw.jskh.dao.*,com.lw.jskh.dao.impl.*"%>
- <%
+<%
     String path = request.getContextPath();
-   String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
- %>       
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    XingZheng xingZheng = (XingZheng)session.getAttribute("xingZheng");
+%>
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
-<title>行政人员考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/common.css" />
-<style type="text/css">
-<!--
--->
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
+    <title>教师考核系统</title>
+    <link type="text/css" rel="stylesheet" href="<%=basePath%>css/upload.css" />
+
+    <script type="text/javascript">
+
+        function no() {
+            var one = document.getElementById("upknow");
+            one.style.display="inline-block"
+            var id = event.srcElement.id;
+            switch (id) {
+                case 'a':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=13";
+                    break;
+                case 'b':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=14";
+                    break;
+                case 'c':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=15";
+                    break;
+                case 'd':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=16";
+                    break;
+                case 'e':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=17";
+                    break;
+                case 'f':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=18";
+                    break;
+                case 'g':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=19";
+                    break;
+                case 'h':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=20";
+                    break;
+                case 'i':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=21";
+                    break;
+                case 'j':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=22";
+                    break;
+                case 'k':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=23";
+                    break;
+                case 'l':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=24";
+                    break;
+                case 'm':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=25";
+                    break;
+                case 'n':
+                    document.getElementById("up").action = "xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=26";
+                    break;
+
+            }
+
+        }
+
+        function dis() {
+            var one = document.getElementById("upknow");
+            if (one.style.display=="inline-block"){
+                one.style.display="none";
+            }
+        }
+    </script>
 
 </head>
 
 <body>
- <%
- XingZheng xingZheng = (XingZheng)session.getAttribute("xingZheng");
- int year = 2000; 
-if(xingZheng==null){
-  response.sendRedirect("../index.jsp");
-}else{
-   Date today=new Date();
-   SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
-   String str_today=simpleDateFormat.format(today);
-   int month = Integer.parseInt(str_today.substring(6,7));
-   if(month < 9){
-   year = Integer.parseInt(str_today.substring(0,4)) -1;
-   }else{
-  	 year = Integer.parseInt(str_today.substring(0,4));
-   }
-   out.println("<br/><font color='red' size='3'>被考评行政人员：" + xingZheng.getTrueName() + "</font>" );
-   //out.println("<font color='red' size='3'>　　　登录时间：" + str_today + "</font>" );
-   out.println(" 　　　<a href='../xingZhengExit'>退出登录</a>");
-   out.println("　　　　　　");
-   out.println(" <a href='xingzhengMain.jsp'>退回行政人员主页</a>");
+<%
 
-            %>
-       <%
-       
-         request.setCharacterEncoding("utf-8");
-        String filename  = null; 
-        XprizeUploadDao xprizeUploadDao = new XprizeUploadDaoImpl();
-        List<XprizeUpload> xprizeUploads = xprizeUploadDao.queryAllByXid(xingZheng.getId());
-         if(xprizeUploads!=null ){
-        	// System.out.println(xprizeUploads.size());
-         }
-       
-       %>
- <div align="center"   >
-<br/><br/><br/>
- <h1>上传佐证材料</h1><br/>
-<table border="1">
-  
-     
-        <tr>  
-           <th  colspan="3"　 width="６00" height="30"> 13	获得校级教学和科研成果</th>
-        </tr>
-         <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==13){
-               %>
-            	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                <%  
-            	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=13" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-        
-         <tr>  
-               <th  colspan="3"　 height="30"> 14	学校科研考核为优秀（90分）以上，加5分</th>
-        </tr>
-          <tr>  
-             <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==14){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=14" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"   /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-        
-        <tr>  
-           <th  colspan="3"　 height="30"> 15	获得校级奖励</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==15){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=15" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"   /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 16	参与并认真完成学校重大事项抽调工作加5分。</th>
-        </tr>
-          <tr>  
-            <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==16){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=16" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 17	教师开展社会服务项目资金到学校财务指定账户且结题，每5万加10分。</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==17){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=17" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 18	申报并获批国家级教改和科研项目</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==18){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=18" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 19	指导学生获得省部级奖</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==19){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=19" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 20	担任课程主讲教师且完成各项任务</th>
-        </tr>
-          <tr>  
-          <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==20){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=20" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 21	公开出版教材</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==21){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=21" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 22	发表教育教学改革中文核心论文</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==22){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=22" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 23	教师每推荐一家企业与学校合作成功（签订合作协议）加5分</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==23){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=23" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-         
-          <tr>  
-           <th  colspan="3"　 height="30"> 24	以第一作者申请发明专利并授权加50分。</th>
-        </tr>
-          <tr>  
-           <td  colspan="3"　 height="30"> 已经上传：<br>
-           <%
-            for(XprizeUpload xprizeUpload : xprizeUploads){
-            	if(xprizeUpload.getxPrizeType()==24){
-                    %>
-                	<a href='<%=basePath %>/upload/<%=xprizeUpload.getxPrizePic()%>'><%=xprizeUpload.getxPrizePic()%></a>　
-            	<a href="javascript:if(confirm('确认是否删除此项？')) location='xPrizeUploadDel?id=<%=xprizeUpload.getId()%>'"><img alt="del" src="<%=basePath %>/images/icon_error.gif" /></a>　　　　
-            	<br>
-                    <%  
-                	}
-            }
-           %></td>
-        </tr>
-         <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=24" method="post" enctype="multipart/form-data" >
-         <tr>
-            <td>上传图片：</td><td><input type="file" accept="application/pdf" name="file" size="80"  /></td><td><input type="submit" value="上传" /></td>
-         </tr>
-         </form>
-     
-</table>  
- 	  
- </div>
- <%} %>
+    int year = 2000;
+    if(xingZheng==null){
+        response.sendRedirect("../index.jsp");
+    }else{
+        Date today=new Date();
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        String str_today=simpleDateFormat.format(today);
+        int month = Integer.parseInt(str_today.substring(6,7));
+        if(month < 9){
+            year = Integer.parseInt(str_today.substring(0,4)) -1;
+        }else{
+            year = Integer.parseInt(str_today.substring(0,4));
+        }
+%>
+<%
+
+    request.setCharacterEncoding("utf-8");
+    String filename  = null;
+    XprizeUploadDao xprizeUploadDao = new XprizeUploadDaoImpl();
+    List<XprizeUpload> xprizeUploads = xprizeUploadDao.queryAllByXid(xingZheng.getId());
+    if(xprizeUploads!=null ){
+        // System.out.println(tprizeUploads.size());
+    }
+
+%>
+<div class="center">
+    <a class="leave" href='../teacherExit'>退出登录</a>
+
+    <a class="leaveimp" href='xingzhengMain.jsp'>退回行政主页</a>
+    <br />
+    <h1>上传佐证材料</h1>
+    <h2>被评教师：<font><%=xingZheng.getTrueName()%></font></h2>
+    <div class="know">
+        <div class="a" onclick="no()" id="a">十三、教师获奖</div>
+        <div class="a" onclick="no()" id="b">十四、教学与科研成果奖</div>
+        <div class="a" onclick="no()" id="c">十五、教师论文发表</div>
+        <div class="b" onclick="no()" id="d">十六、指导学生参加技能大赛、创新创业大赛</div>
+        <div class="a" onclick="no()" id="e">十七、教师社会服务</div>
+        <div class="a" onclick="no()" id="f">十八、教改与科研项目</div>
+        <div class="a" onclick="no()" id="g">十九、科研考核</div>
+        <div class="b" onclick="no()" id="h">二十、完成学校规定科研考核情况</div>
+        <div class="a" onclick="no()" id="i">二十一、支教半年</div>
+        <div class="a" onclick="no()" id="j">二十二、课程主讲教师</div>
+        <div class="a" onclick="no()" id="k">二十三、校企合作</div>
+        <div class="a" onclick="no()" id="l">二十四、专项工作</div>
+        <div class="a" onclick="no()" id="m">二十五、专利</div>
+        <div class="a" onclick="no()" id="n">二十六、公开出版教材</div>
+    </div>
+    <input type="button" class="button" onclick="window.location.href='../teacherExit'" value="退出登录">
+    <input type="button" class="button" onclick="window.location.href='xingzhengMain.jsp'" value="退回行政主页">
+    <div class="upknow" id="upknow">
+        <form action="xingZhengPrizeAddPic?id=<%=xingZheng.getId() %>&xPrizeType=13" method="post" enctype="multipart/form-data"id="up" >
+            <br />
+            <input class="scwj" type="file"  name="file" size="100" required="required" />
+            <br />
+            <br />
+            <input class="sc" type="submit" value="上传" onclick="dis()" />
+            </tr>
+        </form>
+    </div>
+
+</div>
+
+</div>
+<%} %>
 </body>
 </html>

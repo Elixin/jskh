@@ -1,6 +1,8 @@
 body {
     background: url(../images/timg.jpg) no-repeat;
-    background-size: 100%;
+    background-size:contain|cover;
+    width:100%;
+    height: auto;
 }
 
 .center {

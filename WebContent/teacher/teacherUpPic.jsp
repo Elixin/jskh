@@ -35,7 +35,7 @@
          <form action="teacherUpPic?id=<%=teacher.getId() %>" method="post" enctype="multipart/form-data">
              <br />
              <h1>上传个人标准照</h1>
-             <h2>被评教师：<font>段萍</font></h2>
+             <h2>被评教师：<font><%=teacher.getTrueName()%></font></h2>
              <div class="photo">
                  <h3>个人标准照:</h3>
                  <img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="200px">
