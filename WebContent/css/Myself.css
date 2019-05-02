@@ -1,0 +1,67 @@
+.one {
+    display: initial;
+}
+
+.two {
+    display: none;
+}
+
+.three {
+    display: none;
+}
+
+.page {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.page a {
+    margin-left: 30px;
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    color: black;
+}
+
+.page a:active {
+    padding: 15px 30px;
+    border: none;
+    background: orange;
+    color: white;
+}
+#ones{
+    background: #ffa500;
+}#twos{
+     background: #fff;
+ }#threes{
+      background: #fff;
+  }
+
+.leave{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: gray;
+    margin: 0px 20px 0px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.leaveimp{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+.zp{
+    position: relative;
+    text-decoration: none;
+    padding:20px 40px;
+    background: orange;
+    color: white;
+    top: -30px;
+    left: 40px;
+    border-radius: 10px;
+}

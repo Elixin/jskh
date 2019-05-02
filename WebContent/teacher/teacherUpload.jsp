@@ -126,8 +126,8 @@ if(teacher==null){
              <div class="a" onclick="no()" id="m">二十五、专利</div>
              <div class="a" onclick="no()" id="n">二十六、公开出版教材</div>
          </div>
-         <input type="button" class="button" src="../teacherExit" value="退出登录">
-         <input type="button" class="button" src="teacherMain.jsp" value="退回教师主页">
+         <input type="button" class="button" onclick="window.location.href='../teacherExit'" value="退出登录">
+         <input type="button" class="button" onclick="window.location.href='teacherMain.jsp'" value="退回教师主页">
          <div class="upknow" id="upknow">
              <form action="teacherPrizeAddPic?id=<%=teacher.getId()%>&tPrizeType=13" method="post" enctype="multipart/form-data" id="up">
                  <br />

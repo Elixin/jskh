@@ -1,0 +1,83 @@
+.one{
+    display: inline;
+}
+
+.two{
+    display: none;
+}
+
+.three{
+    display: none;
+}
+
+.four{
+    display: none;
+}
+
+.page{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.page a{
+    margin-left: 30px;
+    text-decoration: none;
+    border: 1px solid orange;
+
+    padding: 10px 20px;
+    color: black;
+}
+#ones{
+    background: #ffa500;
+}#twos{
+    background: #fff;
+}#threes{
+    background: #fff;
+}#fours{
+    background: #fff;
+}
+
+.page a:active{
+    padding: 15px 30px;
+    border: none;
+    background: orange;
+    color: white;
+}
+
+.leave{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: gray;
+    margin:50px 20px 0px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.leaveimp{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+.tj{
+    width: 200px;
+    height: 40px;
+    background: orange;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 20px 20px 10px 0px;
+}
+
+.qx{
+    width: 200px;
+    height: 40px;
+    background: orange;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 20px 20px 10px 0px;
+}
