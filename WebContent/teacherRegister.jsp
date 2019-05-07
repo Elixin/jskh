@@ -106,6 +106,7 @@
             <input type="submit" class="button" value="提交" onclick="return check()">
         </label>
     </form>
+    <a href="index_teacher.jsp">开始登录</a>
 </div>
 </body>
 </html>

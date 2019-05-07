@@ -15,16 +15,15 @@
 </head>
 
 <body>
-<div class="center">
+<div class="index">
     <div class="title">教职工年度考核填报系统</div>
     <div class="button">
         <div class="teacher"><a href="index_teacher.jsp">教师</a></div>
         <div class="xingzheng"><a href="index_xingzheng.jsp">行政人员</a></div>
         <div class="fuzeren"><a href="index_teamLeader.jsp">团队负责人</a></div>
-        <div class="lingdao"><a href="index_collegeLeader.jsp">院领导</a></div>
+        <div class="lingdao"><a href="#">院领导</a></div>
     </div>
-<%--    111--%>
+    <img class="ren" src="<%=basePath%>images/ren.png"/>
 </div>
-<p>本系统推荐使用1980*1080浏览器缩放100%访问</p>
 </body>
 </html>
