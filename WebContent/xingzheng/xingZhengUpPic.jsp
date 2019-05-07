@@ -74,5 +74,19 @@
     </form>
 </div>
 <%} %>
+
+<%
+
+    String Error1=(String) request.getAttribute("message3");
+//    System.out.println(Error1);
+    try {
+        if(Error1.equals("图片上传成功！")){
+            out.print("<script type='text/javascript'> alert('"+Error1+"'); </script>");
+            session.removeAttribute("message3");
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+%>
 </body>
 </html>

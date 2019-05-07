@@ -146,5 +146,19 @@
 
 </div>
 <%} %>
+
+<%
+
+    String Error=(String) request.getAttribute("message2");
+//    System.out.println(Error);
+    try {
+        if(Error.equals("图片/文件上传成功！")){
+            out.print("<script type='text/javascript'> alert('"+Error+"'); </script>");
+            session.removeAttribute("message2");
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+%>
 </body>
 </html>

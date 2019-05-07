@@ -132,11 +132,11 @@ public class TeacherUpPicServlet extends HttpServlet {
 						out.close();
 						//删除处理文件上传时生成的临时文件
 						item.delete();
-						message = "图片文件上传成功！";
+						message = "图片上传成功！";
 						filename = teacher.getUsername() + "_" + teacher.getTrueName() + "\\" + filename;
 					}else {
 //						如果上传类型错误则获取原本数据库类字段恢复数据
-						filename = teacher.getPic();
+//						filename = teacher.getPic();
 						System.out.println(filename+"   123");
 						item.delete();
 					}
@@ -149,6 +149,7 @@ public class TeacherUpPicServlet extends HttpServlet {
 		teacherDao.updateTeacherAll(teacher);
 		HttpSession session = request.getSession();
 		session.setAttribute("teacher", teacher);
+		request.setAttribute("message1",message);
 		request.getRequestDispatcher("teacherUpPic.jsp").forward(request, response);
 	}
 

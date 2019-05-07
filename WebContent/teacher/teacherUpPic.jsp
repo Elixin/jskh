@@ -50,6 +50,19 @@
          </form>
      </div>
  <%} %>
+
+ <%
+
+     String Error1=(String) request.getAttribute("message1");
+     try {
+         if(Error1.equals("图片上传成功！")){
+             out.print("<script type='text/javascript'> alert('"+Error1+"'); </script>");
+             session.removeAttribute("message1");
+         }
+     } catch (Exception e) {
+         e.printStackTrace();
+     }
+ %>
 </body>
 </html>
 

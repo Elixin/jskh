@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -121,7 +122,7 @@ public class TeacherPrizeAddPicServlet extends HttpServlet {
 		out.close();
 		//删除处理文件上传时生成的临时文件
 		item.delete();
-		message = "图片文件上传成功！";
+		message = "图片/文件上传成功！";
 		}
 		}
 		}catch (Exception e) {
@@ -136,8 +137,11 @@ public class TeacherPrizeAddPicServlet extends HttpServlet {
     	tprizeUpload.settPrizePic(filename);
     	tprizeUpload.settPrizeType(tPrizeType);
     	tprizeUploadDao.add(tprizeUpload);
+		HttpSession httpSession=request.getSession();
+		request.setAttribute("message",message);
 		//request.setAttribute("tprizeUpload",tprizeUpload);
 		request.getRequestDispatcher("teacherUpload.jsp").forward(request, response);
+
 		
 	}
 

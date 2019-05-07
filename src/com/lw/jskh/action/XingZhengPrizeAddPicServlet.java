@@ -121,7 +121,7 @@ public class XingZhengPrizeAddPicServlet extends HttpServlet {
 		out.close();
 		//删除处理文件上传时生成的临时文件
 		item.delete();
-		message = "图片文件上传成功！";
+		message = "图片/文件上传成功！";
 		}
 		}
 		}catch (Exception e) {
@@ -137,6 +137,7 @@ public class XingZhengPrizeAddPicServlet extends HttpServlet {
     	xprizeUpload.setxPrizeType(xPrizeType);
     	xprizeUploadDao.add(xprizeUpload);
 		//request.setAttribute("xprizeUpload",xprizeUpload);
+		request.setAttribute("message2",message);
 		request.getRequestDispatcher("xingZhengUpload.jsp").forward(request, response);
 		
 	}
