@@ -72,6 +72,7 @@
             var one = document.getElementById("upknow");
             if (one.style.display=="inline-block"){
                 one.style.display="none";
+                alert("上传成功")
             }
         }
     </script>

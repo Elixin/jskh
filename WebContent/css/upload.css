@@ -111,6 +111,8 @@ h2 font {
     margin:50px 20px 0px 20px;
     border-radius: 10px;
     color: white;
+    position: absolute;
+    top: 30px;
 }
 
 .leaveimp{
@@ -119,4 +121,7 @@ h2 font {
     background: orange;
     border-radius: 10px;
     color: white;
+    position: absolute;
+    top: 80px;
+    left:540px;
 }
