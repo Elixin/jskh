@@ -74,8 +74,8 @@
             <input type="text" name="password2" id="password2" required="required" placeholder="与上面输入密码相同" />
         </label>
         <label>
-            <span>职称</span>
-            <input type="text" name="level"  required="required" placeholder="软件与控制" />
+            <span>职位</span>
+            <input type="text" name="level"  required="required" placeholder="在职职位：学生科科长" />
         </label>
         <label>
             <span>管理团队</span>

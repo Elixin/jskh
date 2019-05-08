@@ -34,7 +34,7 @@
 <div class="center"></div>
 <div class="system"><a href='../teamLeaderExit'>退出登录</a></div>
 <div class="important">
-    <span><%=teamLeader.getPosition() %></span>
+    <span><%=teamLeader.getManagerTeam()+"负责人" %></span>
     <div class="name"><%=teamLeader.getTrueName() %></div>
     <%
         String teamType = teamLeader.getTeamType().trim();
