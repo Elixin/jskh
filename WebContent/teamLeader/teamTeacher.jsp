@@ -31,7 +31,7 @@
     %>
 
 
-    <h1><font color='black' ><%=teamLeader.getPosition()+"负责人" %></font>：<font color='blue' size="50px"><%=teamLeader.getTrueName() %></font></h1><br/><br/>
+    <h1><font color='black' ><%=teamLeader.getManagerTeam()+"团队负责人" %></font>：<font color='blue' size="50px"><%=teamLeader.getTrueName() %></font></h1><br/><br/>
 
     <h2><font color='red' ><%=teamLeader.getManagerTeam() %> </font>成员</h2>
     <br />

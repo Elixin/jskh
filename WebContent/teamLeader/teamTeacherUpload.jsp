@@ -37,13 +37,15 @@
    int id = Integer.parseInt(request.getParameter("id"));
    TeacherDao teacherDao = new TeacherDaoImpl();
    Teacher teacher = teacherDao.getTeacherById(id);
-   out.println("<br/><font color='red' size='3'>被考评教师：" + teacher.getTrueName() + "</font>" );
+   out.println("<br/><font color='red' size='5'>被考评教师：" + teacher.getTrueName() + "</font>" );
    //out.println("<font color='red' size='3'>　　　登录时间：" + str_today + "</font>" );
-   out.println(" 　　　<a href='../teamLeaderExit'>退出登录</a>");
-   out.println("　　　　　　");
-   out.println(" <a href='teamLeaderMain.jsp'>团 队负责人主页</a>");
+//   out.println(" 　　　<a href='../teamLeaderExit'>退出登录</a>");
+//   out.println("　　　　　　");
+//   out.println(" <a href='teamLeaderMain.jsp'>团 队负责人主页</a>");
 
             %>
+ <a href='../teamLeaderExit' class="leave">退出登录</a>
+ <a href='teamLeaderMain.jsp' class="leaveimp">团队负责人主页</a>
        <%
        
          request.setCharacterEncoding("utf-8");

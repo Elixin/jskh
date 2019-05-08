@@ -4,4 +4,20 @@
 }
 a{text-decoration:none;
 	text-align: center;
+
      }
+.leave{
+	text-decoration: none;
+	padding: 15px 30px;
+	background: gray;
+	margin:50px 20px 0px 20px;
+	border-radius: 10px;
+	color: white;
+}
+.leaveimp{
+	text-decoration: none;
+	padding: 15px 30px;
+	background: orange;
+	border-radius: 10px;
+	color: white;
+}

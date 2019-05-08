@@ -152,6 +152,8 @@ function disfour() {
             TeacherDao teacherDao = new TeacherDaoImpl();
             Teacher teacher = teacherDao.getTeacherById(id);
             %>
+</br>
+
  <a class="leave" href='../teacherExit'>退出登录</a>
 
  <a class="leaveimp" href='teamLeaderMain.jsp'>退回团队负责人主页</a>

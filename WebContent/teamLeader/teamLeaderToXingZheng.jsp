@@ -283,6 +283,7 @@
 //      out.println(" <a href='teamLeaderMain.jsp'>团队负责人主页</a>");
             %>
 
+ <br/>
  <a class="leave" href='../teacherExit'>退出登录</a>
 
  <a class="leaveimp" href='teamLeaderMain.jsp'>退回团队负责人主页</a>
@@ -297,10 +298,15 @@
 
  <h1>信息工程学院行政人员工作量化考核表（<%=year %>年）</h1><br/>
     <br/><br/>
-    被考评教师姓名：<font color='red' size='3'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　
-     　 日期：<font color='red' size='3'><%=str_today %> </font>　　　　
-     <font color='red' size='5'><a href="xingzheng_team.jsp?id=<%=id%>">团队负责人打分</a></font>　　　　
-     <font color='red' size='5'><a href="teamXingZheng.jsp">继续给团队其它人员打分</a></font>
+    <font color='black'size='5'>被考评教师姓名:</font>　
+    <font color='red' size='5'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　
+    <font color='black' size='5'>日期:</font>
+    <font color='red' size='5'><%=str_today %> </font>　
+    <a href="xingzheng_team.jsp?id=<%=id%>" class="leaveimp">团队负责人打分</a>　
+    <a href="teamXingZheng.jsp" class="leaveimp">继续给团队其它人员打分</a>　
+    <br/><br/>　
+     <%--<font color='red' size='5'></font>　　　　--%>
+     <%--<font color='red' size='5'></font>--%>
     <table border="1" class="one" id="one" >
       <thead>
       

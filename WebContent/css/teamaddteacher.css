@@ -72,15 +72,19 @@ body{
 	font-size: 30px;
 	margin-top: 100px;
 	display: block;
-	margin-left: 160px;
+	/*margin-left: 160px;*/
 	float: left;
+	width: 100%;
+	text-align: center;
 }
 .name{
-	margin-left: 260px;
+	/*margin-left: 260px;*/
 	float: left;
 	color:darkblue;
 	font-size: 35px;
 	margin-top: 30px;
+	width: 100%;
+	text-align: center;
 }
 .return{
 	width: 300px;

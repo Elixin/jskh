@@ -137,6 +137,7 @@
 //            out.println(" <a href='../teamLeaderExit'>退出登录</a> ||　　　　　　");
 //            out.println(" <a href='teamLeaderMain.jsp'>团队负责人主页</a>");
             %>
+</br>
  <a class="leave" href='../teacherExit'>退出登录</a>
 
  <a class="leaveimp" href='teamLeaderMain.jsp'>退回团队负责人主页</a>
@@ -152,10 +153,16 @@
 
 
 <h1>信息工程学院专任教师工作量化考核表（<input type="text" name="year" value="<%=year%>" size="8"/>年）</h1><br>
-<font color='red' size='4'><a href="teamLeaderToTeacher.jsp?id=<%=id%>">重新评价</a></font>　｜　
-<font color='red' size='4'><a href="teamTeacherUpload.jsp?id=<%=id%>">查看获奖材料</a></font>　｜　
-<font color='red' size='4'><a href="teamTeacher.jsp">评价下一个</a></font>　｜　
-<font color='red' size='4'><a href="teamLeaderMain.jsp">返回主页</a></font>
+    <div class="top_in">
+        <a href="teamLeaderToTeacher.jsp?id=<%=id%>">重新评价</a>
+        <a href="teamTeacherUpload.jsp?id=<%=id%>">查看获奖材料</a>
+        <a href="teamTeacher.jsp">评价下一个</a>
+        <a href="teamLeaderMain.jsp">返回主页</a>
+    </div>
+<%--<font color='red' size='4'><a href="teamLeaderToTeacher.jsp?id=<%=id%>">重新评价</a></font>　｜　--%>
+<%--<font color='red' size='4'><a href="teamTeacherUpload.jsp?id=<%=id%>">查看获奖材料</a></font>　｜　--%>
+<%--<font color='red' size='4'><a href="teamTeacher.jsp">评价下一个</a></font>　｜　--%>
+<%--<font color='red' size='4'><a href="teamLeaderMain.jsp">返回主页</a></font>--%>
     <thead align="left">
     <h1><font color='red' size='3'><%=teacher.getTrueName() %>　/　<%=teacher.getTeam() %></font></h1>
     </thead>

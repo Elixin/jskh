@@ -29,7 +29,7 @@
 <div class="center" >
 <br><br>
     <br><br>
-    <h1><font color='black' ><%=teamLeader.getManagerTeam() %>负责人</font>:<font color='blue' ><%=teamLeader.getTrueName() %></font></h1><br/><br/>
+    <h1><font color='black' ><%=teamLeader.getManagerTeam() %>团队负责人</font>:<font color='blue' ><%=teamLeader.getTrueName() %></font></h1><br/><br/>
 
     <h1><font color='black' ><%=teamLeader.getManagerTeam() %></font></h1>
     <h2>(按团队负责人打分降序排列)</h2><br>

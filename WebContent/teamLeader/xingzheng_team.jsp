@@ -280,7 +280,7 @@ function dissex() {
 //  out.println(" <a href='teamLeaderMain.jsp'>团队负责人主页</a>");
           
             %>
-
+<br/>
  <a class="leave" href='../teacherExit'>退出登录</a>
 
  <a class="leaveimp" href='teamLeaderMain.jsp'>退回团队负责人主页</a>
@@ -296,8 +296,13 @@ function dissex() {
 <form action="<%=basePath%>teamLeader/teamKh" method="post" name="tkhbForm" >
 
 <h1>信息工程学院专任教师工作量化考核表（<input type="text" name="year" value="<%=year%>" size="8"/>年）</h1><br/>
-    　被考评教师：<font color='red' size='3'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-     　 日期：<font color='red' size='3'><%=str_today %> </font>
+    <%--　被考评教师：<font color='red' size='3'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　--%>
+     <%--　 日期：<font color='red' size='3'><%=str_today %> </font>--%>
+    <font color='black'size='5'>被考评教师姓名:</font>　
+    <font color='red' size='5'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　
+    <font color='black' size='5'>日期:</font>
+    <font color='red' size='5'><%=str_today %> </font>　
+    <br/><br/>　
          <table border="1" class="one" id="one">
       <thead>
       
