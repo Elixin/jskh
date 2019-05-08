@@ -15,7 +15,7 @@
         <!--
         -->
     </style>
-    <%--    <script type="application/javascript">--%>
+        <script type="application/javascript">
     <%--        function image(target) {--%>
     <%--            var name=target.value;--%>
     <%--            var fileName = name.substring(name.lastIndexOf(".")+1).toLowerCase();--%>
@@ -25,7 +25,10 @@
     <%--                return false;   //阻止submit提交--%>
     <%--            }--%>
     <%--        }--%>
-    <%--    </script>--%>
+            function succeed() {
+                alert("上传成功");
+            }
+        </script>
 </head>
 
 <body>
@@ -62,7 +65,7 @@
         <div class="sc">
             <h3>上传图片：</h3>
             <input type="file" accept="image/*" name="upfile" size="40" onchange="image(this)" />
-            <input type="submit" value="上传" class="scb" />
+            <input type="submit" value="上传" class="scb" onclick="succeed()" />
         </div>
 
         <div class="time">登陆时间：<%=str_today%></div>
@@ -74,19 +77,5 @@
     </form>
 </div>
 <%} %>
-
-<%
-
-    String Error1=(String) request.getAttribute("message3");
-//    System.out.println(Error1);
-    try {
-        if(Error1.equals("图片上传成功！")){
-            out.print("<script type='text/javascript'> alert('"+Error1+"'); </script>");
-            session.removeAttribute("message3");
-        }
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-%>
 </body>
 </html>

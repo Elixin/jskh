@@ -69,11 +69,11 @@
         }
 
         function dis() {
-            var one = document.getElementById("upknow");
-            if (one.style.display=="inline-block"){
-                one.style.display="none";
-                alert("上传成功")
-            }
+            // var one = document.getElementById("upknow");
+            // if (one.style.display=="inline-block"){
+            //     one.style.display="none";
+                alert("上传成功");
+            // }
         }
     </script>
 
@@ -148,18 +148,5 @@ if(teacher==null){
  	  
  </div>
  <%} %>
-
- <%
-
-     String Error=(String) request.getAttribute("message");
-     try {
-         if(Error.equals("图片/文件上传成功！")){
-             out.print("<script type='text/javascript'> alert('"+Error+"'); </script>");
-             session.removeAttribute("message");
-         }
-     } catch (Exception e) {
-         e.printStackTrace();
-     }
- %>
 </body>
 </html>

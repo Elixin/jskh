@@ -137,7 +137,6 @@ public class XingZhengPrizeAddPicServlet extends HttpServlet {
     	xprizeUpload.setxPrizeType(xPrizeType);
     	xprizeUploadDao.add(xprizeUpload);
 		//request.setAttribute("xprizeUpload",xprizeUpload);
-		request.setAttribute("message2",message);
 		request.getRequestDispatcher("xingZhengUpload.jsp").forward(request, response);
 		
 	}

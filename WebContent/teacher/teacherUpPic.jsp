@@ -15,6 +15,11 @@
 <!--
 -->
 </style>
+    <script type="text/javascript">
+        function succeed() {
+            alert("上传成功");
+        }
+    </script>
 </head>
 
 <body>
@@ -42,7 +47,7 @@
              </div>
              <div class="sc">
                  <h3>上传图片：</h3>
-                 <input type="file" accept="image/*" name="upfile" size="40" /><input class="scb" type="submit" value="上传" />
+                 <input type="file" accept="image/*" name="upfile" size="40" /><input class="scb" type="submit" value="上传" onclick="succeed()" />
              </div>
              <div class="time">登录时间：<%= str_today%></div>
              <a class="button" href="<%=path%>/teacherExit">退出登录</a>
@@ -51,38 +56,5 @@
      </div>
  <%} %>
 
- <%
-
-     String Error1=(String) request.getAttribute("message1");
-     try {
-         if(Error1.equals("图片上传成功！")){
-             out.print("<script type='text/javascript'> alert('"+Error1+"'); </script>");
-             session.removeAttribute("message1");
-         }
-     } catch (Exception e) {
-         e.printStackTrace();
-     }
- %>
 </body>
 </html>
-
-
-<%--
-
-
-<form action="teacherUpPic?id=<%=teacher.getId() %>" method="post" enctype="multipart/form-data" >
-    <table border="1">
-      <tr>
-       <th>个人标准照:</th><td><img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px"></td>
-     </tr>
-      <tr>
-        <td>上传图片：</td><td><input type="file" accept="image/*" name="upfile" size="40"  /><input type="submit" value="上传"  /></td>
-      </tr>
-      </table>
-   </form><br>
-  <a href="teacherMain.jsp">返回教师主页</a>
- </div>
-
-
-
---%>

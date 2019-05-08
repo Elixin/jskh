@@ -132,7 +132,7 @@ public class XingZhengUpPicServlet extends HttpServlet {
                         filename = xingZheng.getUsername() + "_" + xingZheng.getTrueName() + "\\" + filename;
                     }else {
 //						如果上传类型错误则获取原本数据库类字段恢复数据
-//                        filename = xingZheng.getPic();
+                        filename = xingZheng.getPic();
                         System.out.println(filename+"   123");
                         item.delete();
                     }
@@ -146,7 +146,6 @@ public class XingZhengUpPicServlet extends HttpServlet {
         xingZhengDao.updateXingZhengAll(xingZheng);
         HttpSession session = request.getSession();
         session.setAttribute("xingZheng", xingZheng);
-        request.setAttribute("message3",message);
         request.getRequestDispatcher("xingZhengUpPic.jsp").forward(request, response);
     }
 

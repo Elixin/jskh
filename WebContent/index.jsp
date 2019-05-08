@@ -21,7 +21,7 @@
         <div class="teacher"><a href="index_teacher.jsp">教师</a></div>
         <div class="xingzheng"><a href="index_xingzheng.jsp">行政人员</a></div>
         <div class="fuzeren"><a href="index_teamLeader.jsp">团队负责人</a></div>
-        <div class="lingdao"><a href="#">院领导</a></div>
+        <%--<div class="lingdao"><a href="#">院领导</a></div>--%>
     </div>
     <img class="ren" src="<%=basePath%>images/ren.png"/>
 </div>
