@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 "/>
 <title>教师考核系统</title>
-<link type="text/css" rel="stylesheet" href="<%=basePath%>css/myself.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/Myself.css" />
 <style type="text/css">
 <!--
 -->
@@ -45,7 +45,7 @@ function disone() {
     var ones = document.getElementById("ones");
     var twos = document.getElementById("twos");
     var threes = document.getElementById("threes");
-    one.style.display="initial";
+    one.style.display="block";
     two.style.display="none";
     three.style.display="none";
 
@@ -63,7 +63,7 @@ function distwo() {
 
 
     one.style.display="none";
-    two.style.display="initial";
+    two.style.display="block";
     three.style.display="none";
 
     var ones = document.getElementById("ones");
@@ -83,7 +83,7 @@ function disthree() {
 
     one.style.display="none";
     two.style.display="none";
-    three.style.display="initial";
+    three.style.display="block";
 
     var ones = document.getElementById("ones");
     var twos = document.getElementById("twos");

@@ -55,7 +55,7 @@
             var sexs = document.getElementById("sexs");
 
 
-            one.style.display="initial";
+            one.style.display="block";
             two.style.display="none";
             three.style.display="none";
             four.style.display="none";
@@ -83,7 +83,7 @@
 
 
             one.style.display="none";
-            two.style.display="initial";
+            two.style.display="block";
             three.style.display="none";
             four.style.display="none";
             five.style.display="none";
@@ -119,7 +119,7 @@
 
             one.style.display="none";
             two.style.display="none";
-            three.style.display="initial";
+            three.style.display="block";
             four.style.display="none";
             five.style.display="none";
             sex.style.display="none";
@@ -157,7 +157,7 @@
             one.style.display="none";
             two.style.display="none";
             three.style.display="none";
-            four.style.display="initial";
+            four.style.display="block";
             five.style.display="none";
             sex.style.display="none";
 
@@ -194,7 +194,7 @@
             two.style.display="none";
             three.style.display="none";
             four.style.display="none";
-            five.style.display="initial";
+            five.style.display="block";
             sex.style.display="none";
 
 
@@ -232,7 +232,7 @@
             three.style.display="none";
             four.style.display="none";
             five.style.display="none";
-            sex.style.display="initial";
+            sex.style.display="block";
 
 
             var ones = document.getElementById("ones");

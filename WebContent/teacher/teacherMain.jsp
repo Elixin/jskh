@@ -50,7 +50,6 @@
          <h1>教师：<font color='red' ><%=teacher.getTrueName()%></font></h1>
          <button><a href="teacherMyself.jsp">开始自评</a></button>
          <button><a href="teacherUpload.jsp">上传资料</a></button>
-         <button><a href="#">评价团队负责人</a></button>
          <button><a href="teacherSet.jsp">设置个人信息</a></button>
          <a class="leave" href='../teacherExit' >退出登录</a>　
          <div class="time" >登录时间：<%=str_today%></div>

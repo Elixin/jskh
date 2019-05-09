@@ -60,7 +60,7 @@
         <h2>被评行政教师：<font><%=xingZheng.getTrueName()%></font></h2>
         <div class="photo">
             <h3>个人标准照:</h3>
-            <img src="<%=basePath %>upload/<%=xingZheng.getPic()%>" width="100px"/>
+            <div class="photos"><img src="<%=basePath %>upload/<%=xingZheng.getPic()%>" width="100px"/></div>
         </div>
         <div class="sc">
             <h3>上传图片：</h3>

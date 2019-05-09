@@ -2,7 +2,7 @@ a{
     text-decoration: none;
 }
 .one{
-    display: inline;
+    display: block;
 }
 
 .two{
@@ -90,4 +90,15 @@ a{
     outline: none;
     border: none;
     margin: 20px 20px 10px 0px;
+}
+
+.zp{
+    position: relative;
+    text-decoration: none;
+    padding:20px 40px;
+    background: orange;
+    color: white;
+    top: -30px;
+    left: 40px;
+    border-radius: 10px;
 }

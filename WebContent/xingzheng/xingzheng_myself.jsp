@@ -40,216 +40,40 @@ window.onload=function (){
 function disone() {
 
     var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
     var sex = document.getElementById("sex");
 
 
     var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
     var sexs = document.getElementById("sexs");
 
 
-    one.style.display="initial";
-    two.style.display="none";
-    three.style.display="none";
-    four.style.display="none";
-    five.style.display="none";
+    one.style.display="block";
     sex.style.display="none";
 
 
     ones.style.background="#ffa500";
-    twos.style.background="#fff";
-    threes.style.background="#fff";
-    fours.style.background="#fff";
-    fives.style.background="#fff";
     sexs.style.background="#fff";
 
 }
 
-function distwo() {
-
-    var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
-    var sex = document.getElementById("sex");
-
-
-    one.style.display="none";
-    two.style.display="initial";
-    three.style.display="none";
-    four.style.display="none";
-    five.style.display="none";
-    sex.style.display="none";
-
-
-    var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
-    var sexs = document.getElementById("sexs");
-
-
-    ones.style.background="#fff";
-    twos.style.background="#ffa500";
-    threes.style.background="#fff";
-    fours.style.background="#fff";
-    fives.style.background="#fff";
-    sexs.style.background="#fff";
-
-}
-
-function disthree() {
-
-    var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
-    var sex = document.getElementById("sex");
-
-
-    one.style.display="none";
-    two.style.display="none";
-    three.style.display="initial";
-    four.style.display="none";
-    five.style.display="none";
-    sex.style.display="none";
-
-
-    var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
-    var sexs = document.getElementById("sexs");
-
-
-
-
-    ones.style.background="#fff";
-    twos.style.background="#fff";
-    threes.style.background="#ffa500";
-    fours.style.background="#fff";
-    fives.style.background="#fff";
-    sexs.style.background="#fff";
-
-}
-
-function disfour() {
-
-    var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
-    var sex = document.getElementById("sex");
-
-
-    one.style.display="none";
-    two.style.display="none";
-    three.style.display="none";
-    four.style.display="initial";
-    five.style.display="none";
-    sex.style.display="none";
-
-
-    var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
-    var sexs = document.getElementById("sexs");
-
-
-
-    ones.style.background="#fff";
-    twos.style.background="#fff";
-    threes.style.background="#fff";
-    fours.style.background="#ffa500";
-    fives.style.background="#fff";
-    sexs.style.background="#fff";
-
-}
-
-function disfive() {
-
-    var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
-    var sex = document.getElementById("sex");
-
-
-    one.style.display="none";
-    two.style.display="none";
-    three.style.display="none";
-    four.style.display="none";
-    five.style.display="initial";
-    sex.style.display="none";
-
-
-    var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
-    var sexs = document.getElementById("sexs");
-
-
-
-
-    ones.style.background="#fff";
-    twos.style.background="#fff";
-    threes.style.background="#fff";
-    fours.style.background="#fff";
-    fives.style.background="#ffa500";
-    sexs.style.background="#fff";
-
-}
 
 function dissex() {
 
     var one = document.getElementById("one");
-    var two = document.getElementById("two");
-    var three = document.getElementById("three");
-    var four = document.getElementById("four");
-    var five = document.getElementById("five");
     var sex = document.getElementById("sex");
 
 
     one.style.display="none";
-    two.style.display="none";
-    three.style.display="none";
-    four.style.display="none";
-    five.style.display="none";
-    sex.style.display="initial";
+    sex.style.display="block";
 
 
     var ones = document.getElementById("ones");
-    var twos = document.getElementById("twos");
-    var threes = document.getElementById("threes");
-    var fours = document.getElementById("fours");
-    var fives = document.getElementById("fives");
     var sexs = document.getElementById("sexs");
 
 
 
 
     ones.style.background="#fff";
-    twos.style.background="#fff";
-    threes.style.background="#fff";
-    fours.style.background="#fff";
-    fives.style.background="#fff";
     sexs.style.background="#ffa500";
 
 }
@@ -283,7 +107,7 @@ function dissex() {
           
             %>
  <a href='../xingZhengExit' class="leave">退出登录</a>
- <a href='xingzhengMain.jsp' class="leaveimp" >退回行政人员主页</a>
+ <a href='xingzhengMyself.jsp' class="leaveimp" >退回预览页</a>
 <div align="center"   >
 <br/><br/><br/>
 
@@ -298,7 +122,7 @@ function dissex() {
 <h1>信息工程学院专任教师工作量化考核表（<input type="text" name="year" value="<%=year%>" size="8"/>年）</h1><br/>
     　被考评教师：<font color='red' size='3'><%=xingZheng.getTrueName() %></font>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
      　 日期：<font color='red' size='3'><%=str_today %> </font>
-         <table class="one" id="one" border="1" >
+    <table class="one" id="one" border="1" >
       <thead>
       
       </thead>
@@ -345,198 +169,149 @@ function dissex() {
         <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
         <%}%>
       </tr>
+        <tr>
+            <td rowspan="4" width="30px" align="center">二</td>
+            <td rowspan="4" width="50px" align="center">考勤情况</td>
+            <td rowspan="4" width="50px" align="center">20分</td>
+            <td colspan="2"><B>说明：本学期全勤为满分，请假手续以有分管领导签字的纸质请假条为准。出现下列情况作扣分处理：</B></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="30px" align="center">3</td>
+            <td>因私向领导口头请假但未完成纸质请假手续一次扣2分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center">
+                <input type="number" value="<%=xkh.getKhx()[2][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" />
+            </td>
+            <td>
+                <textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[2][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself"  value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+        <tr>
+            <td width="30px" align="center">4</td>
+            <td>完成手续的情况下，因私请假三天及以上（请假天数参照学校年度考核要求）扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[3][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[3][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+        <tr>
+            <td width="30px" align="center">5</td>
+            <td>无故迟到早退一次扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[4][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[4][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+
+        <!--考核项三-->
+        <tr>
+            <td rowspan="3" width="30px" align="center" height="30">三</td>
+            <td rowspan="3" width="50px" align="center">职业道德</td>
+            <td rowspan="3" width="50px" align="center">30分</td>
+            <td colspan="2" align="left"><B>说明：对自已要求严格，能自觉地遵守国家法规和学校的规章制度，工作态度好。出现下列情况作扣分处理：</B></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="30px" align="center">6</td>
+            <td>工作懈怠，不能严格要求自己，上班时间玩网游、看电影、网购一次扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[5][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[5][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+        <tr>
+            <td width="30px" align="center">7</td>
+            <td>被服务对象投诉的；自由散漫，打架、吵架，情节严重，造成严重后果者一次扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[6][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[6][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+
+        <!--考核项四-->
+        <tr>
+            <td rowspan="3" width="30px" align="center">四</td>
+            <td rowspan="3" width="50px" align="center">组织参加活动</td>
+            <td rowspan="3" width="50px" align="center">20分</td>
+            <td colspan="2" align="left"><B>说明：积极组织并参加学校及学院活动、会议、值班，无缺席。出现下列情况作扣分处理：</B></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="30px" align="center">8</td>
+            <td>活动中，不认真和不按要求完成任务现象，迟到、早退一次扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[7][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[7][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+        <tr>
+            <td width="30px" align="center">9</td>
+            <td>活动中，不能认真完成任务，并造成严重影响一次扣10分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[8][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[8][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
+
+        <!--考核项五-->
+        <tr>
+            <td rowspan="1" width="30px" align="center">五</td>
+            <td rowspan="1" width="50px" align="center">教学任务</td>
+            <td rowspan="1" width="50px" align="center">5分</td>
+            <td rowspan="1" width="50px" align="center">10</td>
+            <td>每学期完成系数前40学时教学任务得5分，不足40学时扣5分。</td>
+            <%
+                if(xkh!=null){
+            %>
+            <td align="center"><input type="number" value="<%=xkh.getKhx()[9][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
+            <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[9][0] %></textarea></td>
+            <%}else { %>
+            <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
+            <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
+            <%}%>
+        </tr>
          </table>
 
-    <table class="two" id="two" border="1" >
-        <thead>
 
-        </thead>
-        <!--表头-->
-        <tr>
-            <th colspan="2">考核项</th>
-            <th >基础　分值</th>
-            <th colspan="2">等　 级　说　明</th>
-            <th  width="100px" align="center">得分</th>
-            <th  width="150px" align="center">备注</th>
-        </tr>
-      <!--考核项二-->
-       <tr>
-        <td rowspan="4" width="30px" align="center">二</td>
-        <td rowspan="4" width="50px" align="center">考勤情况</td> 
-        <td rowspan="4" width="50px" align="center">20分</td>
-        <td colspan="2"><B>说明：本学期全勤为满分，请假手续以有分管领导签字的纸质请假条为准。出现下列情况作扣分处理：</B></td>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td width="30px" align="center">3</td>
-        <td>因私向领导口头请假但未完成纸质请假手续一次扣2分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[2][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[2][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself"  value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-      <tr>
-        <td width="30px" align="center">4</td>
-        <td>完成手续的情况下，因私请假三天及以上（请假天数参照学校年度考核要求）扣5分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[3][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[3][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-      <tr>
-        <td width="30px" align="center">5</td>
-        <td>无故迟到早退一次扣5分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[4][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[4][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-    </table>
-
-    <table class="three" id="three" border="1" >
-        <thead>
-
-        </thead>
-        <!--表头-->
-        <tr>
-            <th colspan="2">考核项</th>
-            <th >基础　分值</th>
-            <th colspan="2">等　 级　说　明</th>
-            <th  width="100px" align="center">得分</th>
-            <th  width="150px" align="center">备注</th>
-        </tr>
-       <!--考核项三-->
-      <tr>
-        <td rowspan="3" width="30px" align="center">三</td>
-        <td rowspan="3" width="50px" align="center">职业道德</td> 
-        <td rowspan="3" width="50px" align="center">30分</td>
-        <td colspan="2" align="left"><B>说明：对自已要求严格，能自觉地遵守国家法规和学校的规章制度，工作态度好。出现下列情况作扣分处理：</B></td>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td width="30px" align="center">6</td>
-        <td>工作懈怠，不能严格要求自己，上班时间玩网游、看电影、网购一次扣5分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[5][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[5][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-      <tr>
-        <td width="30px" align="center">7</td>
-        <td>被服务对象投诉的；自由散漫，打架、吵架，情节严重，造成严重后果者一次扣5分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[6][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[6][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-    </table>
-
-    <table class="four" id="four" border="1" >
-        <thead>
-
-        </thead>
-        <!--表头-->
-        <tr>
-            <th colspan="2">考核项</th>
-            <th >基础　分值</th>
-            <th colspan="2">等　 级　说　明</th>
-            <th  width="100px" align="center">得分</th>
-            <th  width="150px" align="center">备注</th>
-        </tr>
-       <!--考核项四-->
-      <tr>
-        <td rowspan="3" width="30px" align="center">四</td>
-        <td rowspan="3" width="50px" align="center">组织参加活动</td> 
-        <td rowspan="3" width="50px" align="center">20分</td>
-        <td colspan="2" align="left"><B>说明：积极组织并参加学校及学院活动、会议、值班，无缺席。出现下列情况作扣分处理：</B></td>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td width="30px" align="center">8</td>
-        <td>活动中，不认真和不按要求完成任务现象，迟到、早退一次扣5分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[7][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[7][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-      <tr>
-        <td width="30px" align="center">9</td>
-        <td>活动中，不能认真完成任务，并造成严重影响一次扣10分。</td>
-        <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[8][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[8][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-    </table>
-
-    <table class="five" id="five" border="1" >
-        <thead>
-
-        </thead>
-        <!--表头-->
-        <tr>
-            <th colspan="2">考核项</th>
-            <th >基础　分值</th>
-            <th colspan="2">等　 级　说　明</th>
-            <th  width="100px" align="center">得分</th>
-            <th  width="150px" align="center">备注</th>
-        </tr>
-       <!--考核项五-->
-      <tr>
-        <td rowspan="1" width="30px" align="center">五</td>
-        <td rowspan="1" width="50px" align="center">教学任务</td> 
-        <td rowspan="1" width="50px" align="center">5分</td>
-        <td rowspan="1" width="50px" align="center">10</td>
-        <td>每学期完成系数前40学时教学任务得5分，不足40学时扣5分。</td>
-         <%
-         if(xkh!=null){
-        %>
-        <td align="center"><input type="number" value="<%=xkh.getKhx()[9][0] %>"  name="xingZhengMyself"  max="0" size="10" onblur="add()" /></td>
-        <td><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ><%=xkh.getKhxNote()[9][0] %></textarea></td>
-        <%}else { %>
-        <td ><input type="number" name="xingZhengMyself" value="0" max="0" size="10" onblur="add()" /></td>
-        <td ><textarea rows="2" cols="20"   name="xingZhengMyselfNote" ></textarea></td>
-        <%}%>
-      </tr>
-    </table>
 
     <div class="sex" id="sex">
     <table  border="1" >
@@ -778,11 +553,7 @@ function dissex() {
 </div>
     <div class="page">
         <a href="#" onclick="disone()" id="ones">1</a>
-        <a href="#" onclick="distwo()" id="twos">2</a>
-        <a href="#" onclick="disthree()" id="threes">3</a>
-        <a href="#" onclick="disfour()" id="fours">4</a>
-        <a href="#" onclick="disfive()" id="fives">5</a>
-        <a href="#" onclick="dissex()" id="sexs">6</a>
+        <a href="#" onclick="dissex()" id="sexs">2</a>
     </div>
  </div> 
  <%} %>     

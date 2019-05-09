@@ -31,7 +31,7 @@
         var twos = document.getElementById("twos");
         var threes = document.getElementById("threes");
         var fours = document.getElementById("fours");
-        one.style.display="initial";
+        one.style.display="block";
         two.style.display="none";
         three.style.display="none";
         four.style.display="none";
@@ -52,7 +52,7 @@
 
 
         one.style.display="none";
-        two.style.display="initial";
+        two.style.display="block";
         three.style.display="none";
         four.style.display="none";
 
@@ -76,7 +76,7 @@
 
         one.style.display="none";
         two.style.display="none";
-        three.style.display="initial";
+        three.style.display="block";
         four.style.display="none";
 
         var ones = document.getElementById("ones");
@@ -99,7 +99,7 @@
         one.style.display="none";
         two.style.display="none";
         three.style.display="none";
-        four.style.display="initial";
+        four.style.display="block";
 
         var ones = document.getElementById("ones");
         var twos = document.getElementById("twos");

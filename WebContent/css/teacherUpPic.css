@@ -56,8 +56,12 @@
 			height: 200px;
 			margin: 0px auto;
 		}
+		.photo .photos{
+			width: 500px;
+		}
 		.photo img{
-			margin-left: 180px;
+            display: block;
+			margin: 0 auto;
 		}
 		.sc{
 			position: relative;

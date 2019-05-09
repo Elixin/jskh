@@ -43,7 +43,9 @@
              <h2>被评教师：<font><%=teacher.getTrueName()%></font></h2>
              <div class="photo">
                  <h3>个人标准照:</h3>
-                 <img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="200px">
+                 <div class="photos">
+                     <img alt="个人标准照" src="<%=basePath %>upload/<%=teacher.getPic()%>" width="100px">
+                 </div>
              </div>
              <div class="sc">
                  <h3>上传图片：</h3>

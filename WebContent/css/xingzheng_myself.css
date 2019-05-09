@@ -1,26 +1,16 @@
 .one{
-    display: inline;
-}
-
-.two{
-    display: none;
-}
-
-.three{
-    display: none;
+    display: block;
+    width: 1376px;
+    margin: 0 auto;
 }
 
 a{
     text-decoration: none;
 }
-.four{
-    display: none;
-}
-.five{
-    display: none;
-}
 .sex{
     display: none;
+    width: 1376px;
+    margin: 0 auto;
 }
 
 .page{
@@ -96,4 +86,15 @@ a{
     outline: none;
     border: none;
     margin: 20px 20px 10px 0px;
+}
+
+.zp{
+    position: relative;
+    text-decoration: none;
+    padding:20px 40px;
+    background: orange;
+    color: white;
+    top: -30px;
+    left: 40px;
+    border-radius: 10px;
 }

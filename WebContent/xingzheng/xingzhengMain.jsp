@@ -46,7 +46,6 @@
         <h1>教师：<font color='red' ><%=xingZheng.getTrueName()%></font></h1>
         <button><a href="xingZhengMyself.jsp">开始自评</a></button>
         <button><a href="xingZhengUpload.jsp">上传资料</a></button>
-        <button><a href="#">评价团队负责人</a></button>
         <button><a href="xingZhengSet.jsp">设置个人信息</a></button>
         <a class="leave" href='../teacherExit' >退出登录</a>　
         <div class="time" >登录时间：<%=str_today%></div>
